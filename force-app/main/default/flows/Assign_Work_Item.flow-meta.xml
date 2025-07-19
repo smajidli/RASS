@@ -49,7 +49,7 @@
             <targetReference>Get_Case_Record_Step</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Obsolete</status>
     <variables>
         <name>recordId</name>
         <dataType>String</dataType>
