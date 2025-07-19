@@ -5,3 +5,4 @@ sf-project.json
 .DS_Store
 .idea/
 .vscode/
+/.sf/
