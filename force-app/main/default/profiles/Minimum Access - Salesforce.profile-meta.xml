@@ -247,6 +247,69 @@
     <layoutAssignments>
         <layout>WorkStepTemplate-Work Step Template Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_devops__App_Config__mdt-sf_devops__App Config Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_devops__Async_Operation_Result__c-sf_devops__Async Operation Result Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_devops__Back_Sync__c-sf_devops__Back Sync Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_devops__Branch__c-sf_devops__Branch Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_devops__Change_Bundle_Install__c-sf_devops__Change Bundle Install Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_devops__Change_Bundle__c-sf_devops__Change Bundle Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_devops__Change_Submission__c-sf_devops__Change Submission Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_devops__Deploy_Component__c-sf_devops__Deploy Component Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_devops__Deployment_Result__c-sf_devops__Deployment Result Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_devops__Environment__c-sf_devops__Environment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_devops__Hidden_Remote_Change__c-sf_devops__Hidden Remote Change Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_devops__Merge_Result__c-sf_devops__Merge Result Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_devops__Object_Activity__c-sf_devops__Object Activity Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_devops__Pipeline_Stage__c-sf_devops__Pipeline Stage Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_devops__Pipeline__c-sf_devops__Pipeline Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_devops__Remote_Change__c-sf_devops__Remote Change Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_devops__Service__mdt-sf_devops__Service Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_devops__Source_Member_Reference__c-sf_devops__Source Member Reference Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_devops__Submit_Component__c-sf_devops__Submit Component Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_devops__Version__mdt-sf_devops__Version Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_devops__Work_Item_Promote__c-sf_devops__Work Item Promote Layout</layout>
+    </layoutAssignments>
     <userLicense>Salesforce</userLicense>
     <userPermissions>
         <enabled>true</enabled>
