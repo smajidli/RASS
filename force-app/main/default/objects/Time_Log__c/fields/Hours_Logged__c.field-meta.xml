@@ -16,7 +16,6 @@
 &quot;8 Hours&quot;, 8,
 &quot;9 Hours&quot; , 9,
 &quot;10 Hours&quot;, 10,
-&quot;50 Hours&quot;, 50,
 0
 )</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
