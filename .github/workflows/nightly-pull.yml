@@ -3,10 +3,10 @@ name: Nightly Pull from Salesforce
 on:
   schedule:
     - cron: '0 5 * * *'
-  workflow_dispatch:          # lets you run it manually
+  workflow_dispatch:
 
 permissions:
-  contents: write             # allow pushing back to the repo
+  contents: write
 
 jobs:
   pull:
@@ -28,7 +28,6 @@ jobs:
           
       - name: Retrieve metadata
         run: |
-          # adjust the wait time if your org is huge
           sfdx force:source:retrieve -u devOrg -x manifest/package.xml -w 20
 
       - name: Commit & push if anything changed
