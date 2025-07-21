@@ -2,7 +2,7 @@ name: Nightly Pull from Salesforce
 
 on:
   schedule:
-    - cron: '56 20 * * *'      # 5AM Toronto daily
+    - cron: '05 21 * * *'      # 5AM Toronto daily
   workflow_dispatch:          # lets you run it manually
 
 permissions:
