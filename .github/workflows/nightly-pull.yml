@@ -39,7 +39,7 @@ jobs:
           # staging only changed / added files
           if ! git diff --quiet; then
             git add .
-            git commit -m "Nightly auto‑pull $(date -u +'%Y-%m-%d %H:%M:%SUTC')"
+            git commit -m "Nightly auto‑pull $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
             git push
           else
             echo "No changes to commit."
