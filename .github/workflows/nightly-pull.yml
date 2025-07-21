@@ -1,0 +1,46 @@
+name: Nightly Pull from Salesforce
+
+on:
+  schedule:
+    - cron: '0 5 * * *'      # 5AM Toronto daily
+  workflow_dispatch:          # lets you run it manually
+
+permissions:
+  contents: write             # allow pushing back to the repo
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install SFDX CLI
+        run: |
+          npm install -g sfdx-cli
+
+      - name: Authenticate to org
+        env:
+          SFDX_AUTH_URL: ${{ secrets.SFDX_AUTH_URL }}
+        run: |
+          echo "$SFDX_AUTH_URL" > sfdx_auth.txt
+          sfdx auth:sfdxurl:store -f sfdx_auth.txt -a devOrg
+
+      - name: Retrieve metadata
+        run: |
+          # adjust the wait time if your org is huge
+          sfdx force:source:retrieve -u devOrg -x manifest/package.xml -w 20
+
+      - name: Commit & push if anything changed
+        run: |
+          git config user.email "autobot@example.com"
+          git config user.name "SF Auto Bot"
+
+          # staging only changed / added files
+          if ! git diff --quiet; then
+            git add .
+            git commit -m "Nightly auto‑pull $(date -u +'%Y-%m-%d')"
+            git push
+          else
+            echo "No changes to commit."
+          fi
