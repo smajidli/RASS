@@ -24,8 +24,8 @@ jobs:
           SFDX_AUTH_URL: ${{ secrets.SFDX_AUTH_URL }}
         run: |
           echo "$SFDX_AUTH_URL" > sfdx_auth.txt
-          sfdx auth:sfdxurl:store -f sfdx_auth.txt -a devOrg
-
+          sfdx force:auth:sfdxurl:store -f sfdx_auth.txt -a devOrg
+          
       - name: Retrieve metadata
         run: |
           # adjust the wait time if your org is huge
