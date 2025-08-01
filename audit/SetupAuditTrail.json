@@ -1,7 +1,7 @@
 {
   "status": 0,
   "result": {
-    "totalSize": 197,
+    "totalSize": 199,
     "done": true,
     "records": [
       {
@@ -3352,6 +3352,40 @@
         },
         "CreatedDate": "2025-08-01T20:50:27.000+0000",
         "Display": "Changed AgentAccountListAllTextv2 Apex Class code"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001Gx44RSAR"
+        },
+        "Action": "PermSetEnableUserPerm",
+        "Section": "Manage Users",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-01T21:08:11.000+0000",
+        "Display": "Changed permission set Experience Profile Manager: Access Data Cloud Data Explorer permission was changed from disabled to enabled"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001Gx44SSAR"
+        },
+        "Action": "PermSetEnableUserPerm",
+        "Section": "Manage Users",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-01T21:08:11.000+0000",
+        "Display": "Changed permission set Experience Profile Manager: Access Customer Asset Lifecycle Management APIs permission was changed from disabled to enabled"
       }
     ]
   }
