@@ -24,32 +24,13 @@ jobs:
         run: |
           echo "$SFDX_AUTH_URL" > sfdx_auth.txt
           sfdx force:auth:sfdxurl:store -f sfdx_auth.txt -a devOrg
-      
-      - name: Show which org we authenticated
-        run: |
-          sfdx force:org:display -u devOrg
-
-      - name: Confirm manifest in repo
-        run: |
-          ls -l manifest/package.xml
-          head -n 40 manifest/package.xml || true
-
-      - name: Sanity retrieve a tiny type
-        run: |
-          # Replace with something you just edited; CustomLabel is a good smoke test
-          sfdx force:source:retrieve -u devOrg -m CustomLabel -w 5 || true
-
-      - name: Show git status/diff BEFORE staging
-        run: |
-          git status -s || true
-          git diff --name-only || true
 
       - name: Retrieve metadata
         run: sfdx force:source:retrieve -u devOrg -x manifest/package.xml -w 20
 
       - name: Export Setup Audit Trail
         run: |
-          # Export the last 30 days of audit entries in JSON
+          # Export the last 1 day of audit entries in JSON
           sfdx force:data:soql:query \
             -u devOrg \
             -q "SELECT Action, Section, CreatedBy.Name, CreatedDate, Display FROM SetupAuditTrail WHERE CreatedDate = LAST_N_DAYS:1" \
