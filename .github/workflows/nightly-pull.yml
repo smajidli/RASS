@@ -57,9 +57,12 @@ jobs:
 
       - name: Commit & push if anything changed
         run: |
-          git config user.email "autobot@example.com"
           git config user.name "SF Auto Bot"
-          git add force-app/ audit/SetupAuditTrail.json
+          git config user.email "bot@example.com"
+          git add -A
+          echo "---- after staging ----"
+          git status -s || true
+          git diff --cached --name-only || true
           if ! git diff --cached --quiet; then
             git commit -m "Nightly auto-pull $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
             git push
