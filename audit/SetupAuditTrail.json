@@ -1,7 +1,7 @@
 {
   "status": 0,
   "result": {
-    "totalSize": 145,
+    "totalSize": 151,
     "done": true,
     "records": [
       {
@@ -2468,6 +2468,108 @@
         },
         "CreatedDate": "2025-08-01T06:26:56.000+0000",
         "Display": "Changed permission set Experience Profile Manager: Access Customer Asset Lifecycle Management APIs permission was changed from enabled to disabled"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001Gmr6jSAB"
+        },
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-01T06:31:14.000+0000",
+        "Display": "Created flow version #2 \"Work Item Owner Change Notification\" for flow with Unique Name \"Work_Item_Owner_Change_Notification\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001GmTkTSAV"
+        },
+        "Action": "activatedinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-01T06:31:17.000+0000",
+        "Display": "Activated flow version #2 \"Work Item Owner Change Notification\" for flow with Unique Name \"Work_Item_Owner_Change_Notification\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001GmTkUSAV"
+        },
+        "Action": "deactivatedinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-01T06:31:17.000+0000",
+        "Display": "Deactivated flow version #1 \"Work Item Owner Change Notification\" for flow with Unique Name \"Work_Item_Owner_Change_Notification\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001GmYsFSAV"
+        },
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-01T06:31:37.000+0000",
+        "Display": "Created flow version #3 \"Request Corporate Year End Documents\" for flow with Unique Name \"Request_Corporate_Year_End_Documents\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001GmSLPSA3"
+        },
+        "Action": "activatedinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-01T06:31:42.000+0000",
+        "Display": "Activated flow version #3 \"Request Corporate Year End Documents\" for flow with Unique Name \"Request_Corporate_Year_End_Documents\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001GmSLQSA3"
+        },
+        "Action": "deactivatedinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-01T06:31:42.000+0000",
+        "Display": "Deactivated flow version #2 \"Request Corporate Year End Documents\" for flow with Unique Name \"Request_Corporate_Year_End_Documents\""
       }
     ]
   }
