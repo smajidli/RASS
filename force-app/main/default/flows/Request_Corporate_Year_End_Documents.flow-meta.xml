@@ -105,7 +105,7 @@
             <targetReference>All_Other_Recipients_Assignment</targetReference>
         </connector>
     </assignments>
-    <description>Screen flow for requesting corporate year end documents</description>
+    <description>Screen flow for requesting corporate year end documents TEST</description>
     <environments>Default</environments>
     <interviewLabel>Request Corporate Year End Documents {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Request Corporate Year End Documents</label>

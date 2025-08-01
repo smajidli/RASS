@@ -4,7 +4,7 @@
         <fullName>Standard</fullName>
         <active>true</active>
         <ruleEntry>
-            <assignedTo>epic.e68c7dd17418@orgfarm.com</assignedTo>
+            <assignedTo>epic.7783de60c38c@orgfarm.salesforce.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Account.BillingCountry</field>
@@ -23,7 +23,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>epic.e68c7dd17418@orgfarm.com</assignedTo>
+            <assignedTo>epic.7783de60c38c@orgfarm.salesforce.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Account.BillingCountry</field>
@@ -42,7 +42,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>epic.e68c7dd17418@orgfarm.com</assignedTo>
+            <assignedTo>epic.7783de60c38c@orgfarm.salesforce.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Account.BillingCountry</field>
@@ -61,7 +61,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>epic.e68c7dd17418@orgfarm.com</assignedTo>
+            <assignedTo>epic.7783de60c38c@orgfarm.salesforce.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Account.BillingCountry</field>
@@ -80,7 +80,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>epic.e68c7dd17418@orgfarm.com</assignedTo>
+            <assignedTo>epic.7783de60c38c@orgfarm.salesforce.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Account.Type</field>

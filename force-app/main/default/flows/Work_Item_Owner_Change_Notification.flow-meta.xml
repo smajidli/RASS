@@ -58,12 +58,12 @@
             <targetReference>Get_Custom_Notification_Record_ID</targetReference>
         </connector>
     </assignments>
-    <description>Bell notification for the work item owner change TEST</description>
+    <description>Bell notification for the work item owner change</description>
     <environments>Default</environments>
     <formulas>
         <name>NotificationBody</name>
         <dataType>String</dataType>
-        <expression>&apos;Work item &quot;&apos; + {!$Record.Subject} + &apos;&quot; has been assigned to you!&apos;</expression>
+        <expression>&#39;Work item &quot;&#39; + {!$Record.Subject} + &#39;&quot; has been assigned to you!&#39;</expression>
     </formulas>
     <interviewLabel>Work Item Owner Change Notification {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Work Item Owner Change Notification</label>
