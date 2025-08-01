@@ -45,7 +45,7 @@ jobs:
           git status -s || true
           git diff --cached --name-only || true
           if ! git diff --cached --quiet; then
-            git commit -m "Nightly auto-pull $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            git commit -m "Nightly auto-pull $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
             git push
           else
             echo "No changes to commit."
