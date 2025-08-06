@@ -7,7 +7,7 @@
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001HHMHASA5"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001HgRuoSAF"
         },
         "Action": "PermSetC2CLicenselessMigration",
         "Section": null,
@@ -18,7 +18,7 @@
           },
           "Name": "Automated Process"
         },
-        "CreatedDate": "2025-08-04T05:11:09.000+0000",
+        "CreatedDate": "2025-08-06T05:20:07.000+0000",
         "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
       }
     ]
