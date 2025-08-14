@@ -132,9 +132,9 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Lead.ProductInterest__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -191,6 +191,10 @@
         <enabled>false</enabled>
         <flow>Work_Item_Owner_Change_Notification</flow>
     </flowAccesses>
+    <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+        <recordType>Account.Corporate_Account</recordType>
+    </layoutAssignments>
     <layoutAssignments>
         <layout>AlternativePaymentMethod-Alternative Payment Method Layout</layout>
     </layoutAssignments>
@@ -345,6 +349,10 @@
         <layout>PaymentAuthAdjustment-Payment Authorization Adjustment Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>PersonAccount-Person Account Layout</layout>
+        <recordType>PersonAccount.PersonAccount</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>ProcessException-Process Exception Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -448,6 +456,11 @@
     </layoutAssignments>
     <recordTypeVisibilities>
         <default>true</default>
+        <recordType>Account.Corporate_Account</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
         <recordType>Case.Corporate_Tax</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -460,6 +473,11 @@
         <default>false</default>
         <recordType>Lead.Individual_Lead</recordType>
         <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>PersonAccount.PersonAccount</recordType>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <userLicense>Salesforce</userLicense>
     <userPermissions>

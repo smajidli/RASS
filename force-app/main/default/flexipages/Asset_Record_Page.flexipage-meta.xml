@@ -64,9 +64,6 @@
                             <value>Share</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>AssetTroubleshoot</value>
-                        </valueListItems>
-                        <valueListItems>
                             <value>ViewAssetHierarchy</value>
                         </valueListItems>
                     </valueList>
@@ -107,6 +104,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Name</fieldItem>
                 <identifier>RecordNameField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Service_Name__c</fieldItem>
+                <identifier>RecordService_Name_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -157,6 +164,13 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.HST_Frequency__c</fieldItem>
                 <identifier>RecordHST_Frequency_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Service_Name__c}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>HST</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -167,12 +181,30 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Payroll_Frequency__c</fieldItem>
                 <identifier>RecordPayroll_Frequency_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Name}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>Payroll</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Bookkeeping_Frequency__c</fieldItem>
                 <identifier>RecordBookkeeping_Frequency__cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Name}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>Bookkeeping</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-fqolo2e7be</name>
