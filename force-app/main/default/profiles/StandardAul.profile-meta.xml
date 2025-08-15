@@ -185,6 +185,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>FL_List_Accounts_Text</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Request_Corporate_Year_End_Documents</flow>
     </flowAccesses>
     <flowAccesses>

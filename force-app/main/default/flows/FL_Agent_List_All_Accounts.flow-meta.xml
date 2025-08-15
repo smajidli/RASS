@@ -58,7 +58,7 @@
             <targetReference>Get_All_Accounts</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <name>contextHint</name>
         <dataType>String</dataType>

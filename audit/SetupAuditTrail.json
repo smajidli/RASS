@@ -1,16 +1,16 @@
 {
   "status": 0,
   "result": {
-    "totalSize": 124,
+    "totalSize": 33,
     "done": true,
     "records": [
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVDYUSA5"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PfSfnSAF"
         },
-        "Action": "changedUserEmailVerifiedStatusVerified",
-        "Section": "Manage Users",
+        "Action": "deactivatedinteractiondefversion",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -18,16 +18,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T16:11:34.000+0000",
-        "Display": "For user samad.majidli381@agentforce.com, the User Verified Email status changed to verified"
+        "CreatedDate": "2025-08-14T19:10:28.000+0000",
+        "Display": "Deactivated flow version #4 \"FL Agent Accounts Under Employee Threshold\" for flow with Unique Name \"FL_Agent_Accounts_Under_Employee_Threshold\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVuaaSAD"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PfGv5SAF"
         },
-        "Action": "changedFlexiPage",
-        "Section": "Lightning Pages",
+        "Action": "deactivatedinteractiondefversion",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -35,16 +35,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:06:26.000+0000",
-        "Display": "Changed Lightning Page: Work Item Record Page"
+        "CreatedDate": "2025-08-14T19:11:41.000+0000",
+        "Display": "Deactivated flow version #2 \"FL Agent List All Accounts\" for flow with Unique Name \"FL_Agent_List_All_Accounts\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWFEnSAP"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001Per2DSAR"
         },
-        "Action": "changedFlexiPage",
-        "Section": "Lightning Pages",
+        "Action": "createdinteractiondefinition",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -52,16 +52,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:14:18.000+0000",
-        "Display": "Changed Lightning Page: Work Item Record Page"
+        "CreatedDate": "2025-08-14T19:39:57.000+0000",
+        "Display": "Created flow with Name \"FL List Accounts Text\" and Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PW6DDSA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PfwigSAB"
         },
-        "Action": "changedFlexiPage",
-        "Section": "Lightning Pages",
+        "Action": "activatedinteractiondefinition",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -69,16 +69,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:17:59.000+0000",
-        "Display": "Changed Lightning Page: Work Item Record Page"
+        "CreatedDate": "2025-08-14T19:46:47.000+0000",
+        "Display": "Activated flow with Name \"FL List Accounts Text\" and Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdCySAL"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001Pg0kgSAB"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -86,16 +86,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:02.000+0000",
-        "Display": "Changed permission set 00e1P0000011h11QAA: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T20:15:04.000+0000",
+        "Display": "Created flow version #2 \"FL List Accounts Text\" for flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdCzSAL"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001Pfyz0SAB"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "activatedinteractiondefversion",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -103,16 +103,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:02.000+0000",
-        "Display": "Changed permission set 00e1P000000FD50QAG: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T20:15:09.000+0000",
+        "Display": "Activated flow version #2 \"FL List Accounts Text\" for flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdD0SAL"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001Pfyz1SAB"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "deactivatedinteractiondefversion",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -120,16 +120,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:02.000+0000",
-        "Display": "Changed permission set 00e1P000000RmH5QAK: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T20:15:09.000+0000",
+        "Display": "Deactivated flow version #1 \"FL List Accounts Text\" for flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdD1SAL"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001Pg9OCSAZ"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -137,16 +137,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:02.000+0000",
-        "Display": "Changed permission set 00e1P000000J7WQQA0: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T20:33:57.000+0000",
+        "Display": "Created flow version #3 \"FL List Accounts Text\" for flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdD2SAL"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PgA7JSAV"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -154,16 +154,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:02.000+0000",
-        "Display": "Changed permission set 00e1a000000MWa8AAG: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T20:35:38.000+0000",
+        "Display": "Created flow version #4 \"FL List Accounts Text\" for flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdD3SAL"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PftRWSAZ"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "activatedinteractiondefversion",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -171,16 +171,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:02.000+0000",
-        "Display": "Changed permission set 00e1a000000MWa9AAG: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T20:37:09.000+0000",
+        "Display": "Activated flow version #4 \"FL List Accounts Text\" for flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdD4SAL"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PftRXSAZ"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "deactivatedinteractiondefversion",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -188,16 +188,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:03.000+0000",
-        "Display": "Changed permission set 00e1a000000MWaAAAW: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T20:37:09.000+0000",
+        "Display": "Deactivated flow version #2 \"FL List Accounts Text\" for flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdD5SAL"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PfuuUSAR"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -205,16 +205,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:03.000+0000",
-        "Display": "Changed permission set 00e1a000000MWaBAAW: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T20:46:54.000+0000",
+        "Display": "Created flow version #5 \"FL List Accounts Text\" for flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdD6SAL"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PfusHSAR"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "activatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -222,16 +222,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:03.000+0000",
-        "Display": "Changed permission set 00e1a000000MWaCAAW: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T20:46:58.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for version #5 of flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdD7SAL"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PfusISAR"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "deactivatedinteractiondefversion",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -239,16 +239,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:03.000+0000",
-        "Display": "Changed permission set 00e1a000000MWaDAAW: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T20:46:58.000+0000",
+        "Display": "Deactivated flow version #4 \"FL List Accounts Text\" for flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdD8SAL"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PfqlZSAR"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -256,16 +256,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:03.000+0000",
-        "Display": "Changed permission set 00e1a000000MWaEAAW: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T20:58:31.000+0000",
+        "Display": "Created flow version #6 \"FL List Accounts Text\" for flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdD9SAL"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PgI02SAF"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "activatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -273,16 +273,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:03.000+0000",
-        "Display": "Changed permission set 00e1a000000MWaFAAW: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T20:58:35.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for version #6 of flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDASA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PgI03SAF"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "deactivatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -290,16 +290,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:04.000+0000",
-        "Display": "Changed permission set 00e1a000000MWaGAAW: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T20:58:35.000+0000",
+        "Display": "Deactivated \"System Mode without Sharing\" for version #5 of flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDBSA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001Pg8x3SAB"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -307,16 +307,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:04.000+0000",
-        "Display": "Changed permission set 00e1a000000MWaHAAW: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T20:59:24.000+0000",
+        "Display": "Created flow version #7 \"FL List Accounts Text\" for flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDCSA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PfzIOSAZ"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "activatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -324,16 +324,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:04.000+0000",
-        "Display": "Changed permission set 00e1a000000MWaIAAW: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T20:59:27.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for version #7 of flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDDSA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PfzIPSAZ"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "deactivatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -341,16 +341,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:04.000+0000",
-        "Display": "Changed permission set 00e1a000000MWaJAAW: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T20:59:27.000+0000",
+        "Display": "Deactivated \"System Mode without Sharing\" for version #6 of flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDESA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PgKbMSAV"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -358,16 +358,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:04.000+0000",
-        "Display": "Changed permission set 00e1a000000MWaKAAW: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T21:13:50.000+0000",
+        "Display": "Created flow version #8 \"FL List Accounts Text\" for flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDFSA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001Pfv4GSAR"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "activatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -375,16 +375,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:05.000+0000",
-        "Display": "Changed permission set 00e1a000000MWaLAAW: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T21:13:54.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for version #8 of flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDGSA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001Pfv4HSAR"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "deactivatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -392,16 +392,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:05.000+0000",
-        "Display": "Changed permission set 00e1a000000MWaMAAW: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T21:13:54.000+0000",
+        "Display": "Deactivated \"System Mode without Sharing\" for version #7 of flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDHSA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001Pgr4DSAR"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -409,16 +409,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:05.000+0000",
-        "Display": "Changed permission set 00e1a000000MWaNAAW: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T23:06:23.000+0000",
+        "Display": "Created flow version #9 \"FL List Accounts Text\" for flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDISA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PgkPNSAZ"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "activatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -426,16 +426,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:05.000+0000",
-        "Display": "Changed permission set 00e1a000000MWaOAAW: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T23:06:27.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for version #9 of flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDJSA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PgkPOSAZ"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "deactivatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -443,16 +443,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:05.000+0000",
-        "Display": "Changed permission set 00e1a000000MWaPAAW: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T23:06:27.000+0000",
+        "Display": "Deactivated \"System Mode without Sharing\" for version #8 of flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDKSA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PgnSASAZ"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -460,16 +460,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:06.000+0000",
-        "Display": "Changed permission set 00e1a000000MWaQAAW: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T23:07:45.000+0000",
+        "Display": "Created flow version #10 \"FL List Accounts Text\" for flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDLSA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PgnTjSAJ"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "activatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -477,16 +477,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:06.000+0000",
-        "Display": "Changed permission set 00e1a000000MWaRAAW: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T23:07:48.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for version #10 of flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDMSA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PgnTkSAJ"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "deactivatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -494,16 +494,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:06.000+0000",
-        "Display": "Changed permission set 00e1a000000MWaSAAW: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T23:07:48.000+0000",
+        "Display": "Deactivated \"System Mode without Sharing\" for version #9 of flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDNSA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PgrfJSAR"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -511,16 +511,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:06.000+0000",
-        "Display": "Changed permission set 00e1a000000MWaTAAW: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T23:11:40.000+0000",
+        "Display": "Created flow version #11 \"FL List Accounts Text\" for flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDOSA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PgrgvSAB"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "activatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -528,16 +528,16 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:06.000+0000",
-        "Display": "Changed permission set 00e1a000000MWaUAAW: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T23:11:44.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for version #11 of flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDPSA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PgrgwSAB"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
+        "Action": "deactivatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -545,1572 +545,19 @@
           },
           "Name": "Samad Majidli"
         },
-        "CreatedDate": "2025-08-13T18:28:06.000+0000",
-        "Display": "Changed permission set 00ex00000018ozl_128_09_04_12_5: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
+        "CreatedDate": "2025-08-14T23:11:44.000+0000",
+        "Display": "Deactivated \"System Mode without Sharing\" for version #10 of flow with Unique Name \"FL_List_Accounts_Text\""
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDQSA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001Pi7BxSAJ"
         },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:28:06.000+0000",
-        "Display": "Changed permission set 00ex00000018ozo_128_09_04_12_8: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDRSA1"
-        },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:28:07.000+0000",
-        "Display": "Changed permission set 00ex00000018ozq_128_09_04_12_10: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDSSA1"
-        },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:28:07.000+0000",
-        "Display": "Changed permission set 00ex00000018ozk_128_09_04_12_4: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDTSA1"
-        },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:28:07.000+0000",
-        "Display": "Changed permission set 00ex00000018ozn_128_09_04_12_7: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDUSA1"
-        },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:28:07.000+0000",
-        "Display": "Changed permission set 00ex00000018ozm_128_09_04_12_6: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDVSA1"
-        },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:28:07.000+0000",
-        "Display": "Changed permission set 00ex00000018ozh_128_09_04_12_1: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDWSA1"
-        },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:28:07.000+0000",
-        "Display": "Changed permission set 00ex00000018ozj_128_09_04_12_3: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDXSA1"
-        },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:28:07.000+0000",
-        "Display": "Changed permission set 00ex00000018ozp_128_09_04_12_9: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDYSA1"
-        },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:28:07.000+0000",
-        "Display": "Changed permission set 00e1a000000N1LRAA0: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDZSA1"
-        },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:28:08.000+0000",
-        "Display": "Changed permission set 00e1a000000N1LSAA0: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDaSAL"
-        },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:28:08.000+0000",
-        "Display": "Changed permission set 00e1a000000N1wKAAS: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDbSAL"
-        },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:28:08.000+0000",
-        "Display": "Changed permission set 00e1a000000N1wLAAS: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDcSAL"
-        },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:28:08.000+0000",
-        "Display": "Changed permission set 00edL00000Aq47VQAR: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDdSAL"
-        },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:28:08.000+0000",
-        "Display": "Changed permission set 00edL00000B1mFZQAZ: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDeSAL"
-        },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:28:09.000+0000",
-        "Display": "Changed permission set 00edL00000B2JzVQAV: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDfSAL"
-        },
-        "Action": "PermSetFlsChanged",
-        "Section": "Manage Users",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:28:09.000+0000",
-        "Display": "Changed permission set 00egK000003ZrqvQAC: field-level security for Prospect: Product Interest was changed from Read/Write to No Access"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdDgSAL"
-        },
-        "Action": "changedCFOptionOffOn",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:28:09.000+0000",
-        "Display": "The custom field option Required for Product Interest has changed from off to on"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVx3RSAT"
-        },
-        "Action": "deletedPicklistMapWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:28:43.000+0000",
-        "Display": "Deleted value GC1000 series with color Assigned dynamically from Product Interest picklist and replaced with value GC5000 series"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWHjbSAH"
-        },
-        "Action": "deletedPicklistMapWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:28:48.000+0000",
-        "Display": "Deleted value GC5000 series with color Assigned dynamically from Product Interest picklist and replaced with value GC3000 series"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWICbSAP"
-        },
-        "Action": "changedCFOptionOnOff",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:29:06.000+0000",
-        "Display": "The custom field option Required for Product Interest has changed from on to off"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWICcSAP"
-        },
-        "Action": "changedCFType",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:29:06.000+0000",
-        "Display": "Changed field type of Product Interest custom field from Picklist to Picklist (Multi-Select)"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVlVkSAL"
-        },
-        "Action": "createdCustLink",
-        "Section": "Customize Cases",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:30:17.000+0000",
-        "Display": "Created custom button or link: Button_Request_Year_End_Documents (Detail Page Button)"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVlVlSAL"
-        },
-        "Action": "installedpackagingapp",
-        "Section": "Custom Apps",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:30:18.000+0000",
-        "Display": "Installed AppExchange package: RASS_Buttons"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWINySAP"
-        },
-        "Action": "createdPicklistWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:31:18.000+0000",
-        "Display": "Added value Corporate Tax to Product Interest picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWINzSAP"
-        },
-        "Action": "createdPicklistWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:31:18.000+0000",
-        "Display": "Added value HST Return to Product Interest picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWIO0SAP"
-        },
-        "Action": "createdPicklistWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:31:18.000+0000",
-        "Display": "Added value Payroll to Product Interest picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWIO1SAP"
-        },
-        "Action": "createdPicklistWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:31:18.000+0000",
-        "Display": "Added value Financial Statements to Product Interest picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWIO2SAP"
-        },
-        "Action": "createdPicklistWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:31:18.000+0000",
-        "Display": "Added value Bookkeeping to Product Interest picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWIO3SAP"
-        },
-        "Action": "createdPicklistWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:31:18.000+0000",
-        "Display": "Added value WSIB to Product Interest picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWIO4SAP"
-        },
-        "Action": "createdPicklistWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:31:18.000+0000",
-        "Display": "Added value Health Tax to Product Interest picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWIO5SAP"
-        },
-        "Action": "createdPicklistWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:31:18.000+0000",
-        "Display": "Added value CRA Review to Product Interest picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWIO6SAP"
-        },
-        "Action": "createdPicklistWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:31:18.000+0000",
-        "Display": "Added value T Forms to Product Interest picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWIO7SAP"
-        },
-        "Action": "createdPicklistWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:31:18.000+0000",
-        "Display": "Added value SRED to Product Interest picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWI2ySAH"
-        },
-        "Action": "deletedPicklistMapWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:33:04.000+0000",
-        "Display": "Deleted value Corporate Tax with color Assigned dynamically from Product Interest picklist and replaced with value GC3000 series"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVzbZSAT"
-        },
-        "Action": "deletedPicklistMapWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:33:10.000+0000",
-        "Display": "Deleted value HST Return with color Assigned dynamically from Product Interest picklist and replaced with value GC3000 series"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVnlgSAD"
-        },
-        "Action": "deletedPicklistMapWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:33:15.000+0000",
-        "Display": "Deleted value Financial Statements with color Assigned dynamically from Product Interest picklist and replaced with value GC3000 series"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWFxuSAH"
-        },
-        "Action": "deletedPicklistMapWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:33:22.000+0000",
-        "Display": "Deleted value CRA Review with color Assigned dynamically from Product Interest picklist and replaced with value GC3000 series"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVudTSAT"
-        },
-        "Action": "createdPicklistWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:33:47.000+0000",
-        "Display": "Added value Corporate Tax to Product Interest picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWIcRSAX"
-        },
-        "Action": "changedPicklistSort",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:33:56.000+0000",
-        "Display": "Reordered Product Interest picklist"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVsVfSAL"
-        },
-        "Action": "createdPicklistWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:34:21.000+0000",
-        "Display": "Added value Personal Tax to Product Interest picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PW9PXSA1"
-        },
-        "Action": "changedPicklistSort",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:34:29.000+0000",
-        "Display": "Reordered Product Interest picklist"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdw8SAD"
-        },
-        "Action": "createdPicklistWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:34:37.000+0000",
-        "Display": "Added value HST Return to Product Interest picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdw9SAD"
-        },
-        "Action": "createdPicklistWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:34:37.000+0000",
-        "Display": "Added value Financial Statements to Product Interest picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVdwASAT"
-        },
-        "Action": "createdPicklistWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:34:37.000+0000",
-        "Display": "Added value CRA Review to Product Interest picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVtfhSAD"
-        },
-        "Action": "changedPicklistSort",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:35:05.000+0000",
-        "Display": "Reordered Product Interest picklist"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWESpSAP"
-        },
-        "Action": "deletedPicklistWithColor",
-        "Section": "Customize Leads",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:35:12.000+0000",
-        "Display": "Deleted value GC3000 series from Product Interest picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PW6muSAD"
-        },
-        "Action": "changedFlexiPage",
-        "Section": "Lightning Pages",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:41:26.000+0000",
-        "Display": "Changed Lightning Page: Lead Record Page"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVYMySAP"
-        },
-        "Action": "changedFlexiPage",
-        "Section": "Lightning Pages",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T18:41:49.000+0000",
-        "Display": "Changed Lightning Page: Lead Record Page"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWIpNSAX"
-        },
-        "Action": "value_PERSON_ACCOUNT_TERMS_ACCEPTED",
+        "Action": "value_MAX_STREAMING_TOPICS_PROV",
         "Section": null,
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T19:03:17.000+0000",
-        "Display": "Person Account Enablement Terms and Conditions Accepted"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWNvSSAX"
-        },
-        "Action": "createdRecordType",
-        "Section": "Customize Accounts",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T19:04:07.000+0000",
-        "Display": "Created record type: Corporate Account"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVffOSAT"
-        },
-        "Action": "createdMatchRule",
-        "Section": "Matching Rule",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T19:04:19.000+0000",
-        "Display": "Created new PersonAccount matching rule Standard Person Account Matching Rule v1.0"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVffPSAT"
-        },
-        "Action": "createdDuplicateRule",
-        "Section": "Duplicate Rule",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T19:04:19.000+0000",
-        "Display": "Created new PersonAccount duplicate rule \"Standard Person Account Duplicate Rule\". Set \"Record-Level Security\" to \"Enforce sharing rules\""
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVffQSAT"
-        },
-        "Action": "personAccountsEnabled",
-        "Section": null,
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T19:04:19.000+0000",
-        "Display": "Enabled Person Accounts"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWGPXSA5"
-        },
-        "Action": "changedCustLinkContent",
-        "Section": "Customize Cases",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T19:08:43.000+0000",
-        "Display": "Changed Button_Request_Year_End_Documents button or link content"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWGxLSAX"
-        },
-        "Action": "changedCustLinkContent",
-        "Section": "Customize Cases",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T19:09:16.000+0000",
-        "Display": "Changed Button_Request_Year_End_Documents button or link content"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWInqSAH"
-        },
-        "Action": "createdQuickActionCustom",
-        "Section": "Customize Cases",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T19:09:43.000+0000",
-        "Display": "Created Action on Case: Request_Year_End_Documents"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWS8lSAH"
-        },
-        "Action": "changedFlexiPage",
-        "Section": "Lightning Pages",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T19:10:20.000+0000",
-        "Display": "Changed Lightning Page: Work Item Record Page"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWCaUSAX"
-        },
-        "Action": "changedFlexiPage",
-        "Section": "Lightning Pages",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T19:13:04.000+0000",
-        "Display": "Changed Lightning Page: Work Item Record Page"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWdDzSAL"
-        },
-        "Action": "deactivatePicklistValueWithColor",
-        "Section": "Customize Cases",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T19:51:25.000+0000",
-        "Display": "Deactivated value Phone from 13 picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWmfKSAT"
-        },
-        "Action": "changedFlexiPage",
-        "Section": "Lightning Pages",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:18:15.000+0000",
-        "Display": "Changed Lightning Page: Asset Record Page"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWlJFSA1"
-        },
-        "Action": "changedFlexiPage",
-        "Section": "Lightning Pages",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:18:50.000+0000",
-        "Display": "Changed Lightning Page: Asset Record Page"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWHH4SAP"
-        },
-        "Action": "changedFlexiPage",
-        "Section": "Lightning Pages",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:19:42.000+0000",
-        "Display": "Changed Lightning Page: Asset Record Page"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWQa9SAH"
-        },
-        "Action": "changedFlexiPage",
-        "Section": "Lightning Pages",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:20:51.000+0000",
-        "Display": "Changed Lightning Page: Asset Record Page"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWeZjSAL"
-        },
-        "Action": "deletedPicklistMapWithColor",
-        "Section": "Customize Assets",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:22:47.000+0000",
-        "Display": "Deleted value Shipped with color Assigned dynamically from Asset Status picklist and replaced with value Installed"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWk45SAD"
-        },
-        "Action": "deletedPicklistMapWithColor",
-        "Section": "Customize Assets",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:23:12.000+0000",
-        "Display": "Deleted value Installed with color Assigned dynamically from Asset Status picklist and replaced with value Registered"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWFLjSAP"
-        },
-        "Action": "deletedPicklistMapWithColor",
-        "Section": "Customize Assets",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:23:22.000+0000",
-        "Display": "Deleted value Registered with color Assigned dynamically from Asset Status picklist and replaced with value Installed"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVuk6SAD"
-        },
-        "Action": "changedPicklistDefault",
-        "Section": "Customize Assets",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:23:40.000+0000",
-        "Display": "Changed Asset Status picklist default value from none to Active"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVuk7SAD"
-        },
-        "Action": "changedPicklist",
-        "Section": "Customize Assets",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:23:40.000+0000",
-        "Display": "Changed Asset Status picklist value from Obsolete to Active"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PVuk8SAD"
-        },
-        "Action": "changedPicklistValueApiName",
-        "Section": "Customize Assets",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:23:40.000+0000",
-        "Display": "Changed Asset Status picklist value's API name from Obsolete to Active"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWhxPSAT"
-        },
-        "Action": "changedPicklist",
-        "Section": "Customize Assets",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:23:49.000+0000",
-        "Display": "Changed Asset Status picklist value from Purchased to Inactive"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWhxQSAT"
-        },
-        "Action": "changedPicklistValueApiName",
-        "Section": "Customize Assets",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:23:49.000+0000",
-        "Display": "Changed Asset Status picklist value's API name from Purchased to Inactive"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWckRSAT"
-        },
-        "Action": "createdCFFormula",
-        "Section": "Customize Assets",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:28:53.000+0000",
-        "Display": "Created custom formula field: Service Name (Text)"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWckSSAT"
-        },
-        "Action": "assetlayout",
-        "Section": "Customize Assets",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:28:54.000+0000",
-        "Display": "Changed Asset page layout Asset Layout"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PX3WTSA1"
-        },
-        "Action": "changedFlexiPage",
-        "Section": "Lightning Pages",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:28:56.000+0000",
-        "Display": "Changed Lightning Page: Asset Record Page"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWH3pSAH"
-        },
-        "Action": "changedFlexiPage",
-        "Section": "Lightning Pages",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:29:34.000+0000",
-        "Display": "Changed Lightning Page: Asset Record Page"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWA2CSAX"
-        },
-        "Action": "changedCFFormula",
-        "Section": "Customize Assets",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:29:43.000+0000",
-        "Display": "Changed formula of Service Name custom field from \"Product2.Name & \" \" & TEXT( YEAR(Corporate_Year_End__c) )\" to \"Product2.Name & \" \" & TEXT( YEAR(Corporate_Year_End__c) )\""
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWA2DSAX"
-        },
-        "Action": "deletedCF",
-        "Section": "Customize Assets",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:29:43.000+0000",
-        "Display": "Deleted custom field Service Name"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWjhYSAT"
-        },
-        "Action": "changedFlexiPage",
-        "Section": "Lightning Pages",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:31:36.000+0000",
-        "Display": "Changed Lightning Page: Asset Record Page"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PX5N0SAL"
-        },
-        "Action": "changedFlexiPage",
-        "Section": "Lightning Pages",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:31:56.000+0000",
-        "Display": "Changed Lightning Page: Asset Record Page"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PX5ICSA1"
-        },
-        "Action": "deletedPicklistWithColor",
-        "Section": "Customize Accounts",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:37:15.000+0000",
-        "Display": "Deleted value Prospect from Account Type picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PX69OSAT"
-        },
-        "Action": "deletedPicklistWithColor",
-        "Section": "Customize Accounts",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:37:35.000+0000",
-        "Display": "Deleted value Customer - Channel from Account Type picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWhGCSA1"
-        },
-        "Action": "deletedPicklistWithColor",
-        "Section": "Customize Accounts",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:37:52.000+0000",
-        "Display": "Deleted value Channel Partner / Reseller from Account Type picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PX6EESA1"
-        },
-        "Action": "deletedPicklistWithColor",
-        "Section": "Customize Accounts",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:38:03.000+0000",
-        "Display": "Deleted value Customer - Direct from Account Type picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWgy6SAD"
-        },
-        "Action": "deletedPicklistWithColor",
-        "Section": "Customize Accounts",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:38:27.000+0000",
-        "Display": "Deleted value Installation Partner from Account Type picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWf66SAD"
-        },
-        "Action": "deletedPicklistWithColor",
-        "Section": "Customize Accounts",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:38:40.000+0000",
-        "Display": "Deleted value Technology Partner from Account Type picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PX6fdSAD"
-        },
-        "Action": "changedPicklistDefault",
-        "Section": "Customize Accounts",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:39:51.000+0000",
-        "Display": "Changed Account Type picklist default value from none to Corporation"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PX6feSAD"
-        },
-        "Action": "changedPicklist",
-        "Section": "Customize Accounts",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:39:51.000+0000",
-        "Display": "Changed Account Type picklist value from Other to Corporation"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PX6ffSAD"
-        },
-        "Action": "changedPicklistValueApiName",
-        "Section": "Customize Accounts",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:39:51.000+0000",
-        "Display": "Changed Account Type picklist value's API name from Other to Corporation"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PX6irSAD"
-        },
-        "Action": "createdPicklistWithColor",
-        "Section": "Customize Accounts",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:40:23.000+0000",
-        "Display": "Added value Individual to Account Type picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWjG3SAL"
-        },
-        "Action": "deletedPicklistWithColor",
-        "Section": "Customize Accounts",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:41:28.000+0000",
-        "Display": "Deleted value Individual from Account Type picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWVbLSAX"
-        },
-        "Action": "createdPicklistWithColor",
-        "Section": "Customize Accounts",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:41:48.000+0000",
-        "Display": "Added value Individual to Account Type picklist with color Assigned dynamically"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PWkQgSAL"
-        },
-        "Action": "deletedPicklistWithColor",
-        "Section": "Customize Accounts",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-13T20:42:20.000+0000",
-        "Display": "Deleted value Individual from Account Type picklist with color Assigned dynamically"
+        "CreatedBy": null,
+        "CreatedDate": "2025-08-15T05:21:58.000+0000",
+        "Display": "Max number of streaming topics"
       }
     ]
   }

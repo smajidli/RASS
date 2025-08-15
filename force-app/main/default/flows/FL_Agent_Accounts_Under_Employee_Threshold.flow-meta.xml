@@ -84,7 +84,7 @@
             <targetReference>Get_Accounts_Under_Threshold</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <name>maxEmployeesText</name>
         <dataType>String</dataType>
