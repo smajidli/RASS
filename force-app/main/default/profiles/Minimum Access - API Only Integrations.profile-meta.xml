@@ -20,6 +20,10 @@
         <apexClass>AgentHello2</apexClass>
         <enabled>false</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>AgentListAccountsApex</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
     <custom>false</custom>
     <fieldPermissions>
         <editable>false</editable>
