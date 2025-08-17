@@ -1,53 +1,25 @@
 {
   "status": 0,
   "result": {
-    "totalSize": 3,
+    "totalSize": 1,
     "done": true,
     "records": [
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001Pi7BxSAJ"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001RJmoeSAD"
         },
-        "Action": "value_MAX_STREAMING_TOPICS_PROV",
+        "Action": "PermSetC2CLicenselessMigration",
         "Section": null,
-        "CreatedBy": null,
-        "CreatedDate": "2025-08-15T05:21:58.000+0000",
-        "Display": "Max number of streaming topics"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PzinQSAR"
-        },
-        "Action": "createdApexClass",
-        "Section": "Apex Class",
         "CreatedBy": {
           "attributes": {
             "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
           },
-          "Name": "Samad Majidli"
+          "Name": "Automated Process"
         },
-        "CreatedDate": "2025-08-15T19:34:01.000+0000",
-        "Display": "Created AgentListAccountsApex Apex Class code"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001PzpN7SAJ"
-        },
-        "Action": "changedApexClass",
-        "Section": "Apex Class",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Samad Majidli"
-        },
-        "CreatedDate": "2025-08-15T19:34:05.000+0000",
-        "Display": "Changed AgentListAccountsApex Apex Class code"
+        "CreatedDate": "2025-08-17T05:00:51.000+0000",
+        "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
       }
     ]
   }
