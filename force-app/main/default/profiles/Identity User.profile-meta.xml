@@ -181,6 +181,14 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>FL_Account_Contacts_Text</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>FL_Account_Summary_Text</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>FL_Agent_Accounts_Under_Employee_Threshold</flow>
     </flowAccesses>
     <flowAccesses>
