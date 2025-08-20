@@ -189,6 +189,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>FL_Account_WorkItems_Text</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>FL_Agent_Accounts_Under_Employee_Threshold</flow>
     </flowAccesses>
     <flowAccesses>
@@ -198,6 +202,14 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>FL_List_Accounts_Text</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>FL_Prospect_Finder_Text</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>FL_Services_Expiring_Text</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
@@ -337,6 +349,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Time_Log__c-Time Track Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserAlt-User Profile Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>UserProvAccount-User Provisioning Account Layout</layout>

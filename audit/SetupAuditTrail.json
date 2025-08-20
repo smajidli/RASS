@@ -1,13 +1,602 @@
 {
   "status": 0,
   "result": {
-    "totalSize": 1,
+    "totalSize": 36,
     "done": true,
     "records": [
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001STtCHSA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001TclO6SAJ"
+        },
+        "Action": "value_MAX_STREAMING_TOPICS_PROV",
+        "Section": null,
+        "CreatedBy": null,
+        "CreatedDate": "2025-08-19T05:25:35.000+0000",
+        "Display": "Max number of streaming topics"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UITuqSAH"
+        },
+        "Action": "createdinteractiondefinition",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-19T21:25:15.000+0000",
+        "Display": "Created flow with Name \"FL Account WorkItems Text\" and Unique Name \"FL_Account_WorkItems_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UIlddSAD"
+        },
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-19T21:38:01.000+0000",
+        "Display": "Created flow version #1 \"FL Account WorkItems Text\" for flow with Unique Name \"FL_Account_WorkItems_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UIldeSAD"
+        },
+        "Action": "deletedinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-19T21:38:03.000+0000",
+        "Display": "Deleted flow version #-1 \"FL Account WorkItems Text\" for flow with Unique Name \"FL_Account_WorkItems_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UIqZSSA1"
+        },
+        "Action": "activatedinteractiondefinitionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-19T21:38:07.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for flow with Name \"FL Account WorkItems Text\" and Unique Name \"FL_Account_WorkItems_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UG64iSAD"
+        },
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-19T21:38:43.000+0000",
+        "Display": "Created flow version #2 \"FL Account WorkItems Text\" for flow with Unique Name \"FL_Account_WorkItems_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UIgqMSAT"
+        },
+        "Action": "activatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-19T21:38:47.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for version #2 of flow with Unique Name \"FL_Account_WorkItems_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UIgqNSAT"
+        },
+        "Action": "deactivatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-19T21:38:47.000+0000",
+        "Display": "Deactivated \"System Mode without Sharing\" for version #1 of flow with Unique Name \"FL_Account_WorkItems_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UItYwSAL"
+        },
+        "Action": "deactivatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-19T21:41:34.000+0000",
+        "Display": "Deactivated \"System Mode without Sharing\" for version #2 of flow with Unique Name \"FL_Account_WorkItems_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UG4lySAD"
+        },
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-19T21:41:53.000+0000",
+        "Display": "Created flow version #3 \"FL Account WorkItems Text\" for flow with Unique Name \"FL_Account_WorkItems_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UIjeUSAT"
+        },
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-19T21:42:08.000+0000",
+        "Display": "Created flow version #3 \"FL Account WorkItems Text\" for flow with Unique Name \"FL_Account_WorkItems_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UIjeVSAT"
+        },
+        "Action": "deletedinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-19T21:42:09.000+0000",
+        "Display": "Deleted flow version #-3 \"FL Account WorkItems Text\" for flow with Unique Name \"FL_Account_WorkItems_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UHjNZSA1"
+        },
+        "Action": "activatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-19T21:42:12.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for version #3 of flow with Unique Name \"FL_Account_WorkItems_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UODNKSA5"
+        },
+        "Action": "createdinteractiondefinition",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-19T23:35:02.000+0000",
+        "Display": "Created flow with Name \"FL Services Expiring Text\" and Unique Name \"FL_Services_Expiring_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UPeJvSAL"
+        },
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-20T00:00:14.000+0000",
+        "Display": "Created flow version #1 \"FL Services Expiring Text\" for flow with Unique Name \"FL_Services_Expiring_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UPeJwSAL"
+        },
+        "Action": "deletedinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-20T00:00:16.000+0000",
+        "Display": "Deleted flow version #-1 \"FL Services Expiring Text\" for flow with Unique Name \"FL_Services_Expiring_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UPpvBSAT"
+        },
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-20T00:03:28.000+0000",
+        "Display": "Created flow version #1 \"FL Services Expiring Text\" for flow with Unique Name \"FL_Services_Expiring_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UPpvCSAT"
+        },
+        "Action": "deletedinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-20T00:03:32.000+0000",
+        "Display": "Deleted flow version #-1 \"FL Services Expiring Text\" for flow with Unique Name \"FL_Services_Expiring_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UOCKsSAP"
+        },
+        "Action": "activatedinteractiondefinitionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-20T00:05:22.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for flow with Name \"FL Services Expiring Text\" and Unique Name \"FL_Services_Expiring_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UOAXZSA5"
+        },
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-20T00:12:27.000+0000",
+        "Display": "Created flow version #2 \"FL Services Expiring Text\" for flow with Unique Name \"FL_Services_Expiring_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UOfV2SAL"
+        },
+        "Action": "activatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-20T00:12:32.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for version #2 of flow with Unique Name \"FL_Services_Expiring_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UOfV3SAL"
+        },
+        "Action": "deactivatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-20T00:12:32.000+0000",
+        "Display": "Deactivated \"System Mode without Sharing\" for version #1 of flow with Unique Name \"FL_Services_Expiring_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UO58BSAT"
+        },
+        "Action": "createdinteractiondefinition",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-20T00:19:38.000+0000",
+        "Display": "Created flow with Name \"FL Prospect Finder Text\" and Unique Name \"FL_Prospect_Finder_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UKddCSAT"
+        },
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-20T00:30:38.000+0000",
+        "Display": "Created flow version #1 \"FL Prospect Finder Text\" for flow with Unique Name \"FL_Prospect_Finder_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UKddDSAT"
+        },
+        "Action": "deactivatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-20T00:30:38.000+0000",
+        "Display": "Deactivated \"System Mode without Sharing\" for version #1 of flow with Unique Name \"FL_Prospect_Finder_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UKddESAT"
+        },
+        "Action": "deletedinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-20T00:30:40.000+0000",
+        "Display": "Deleted flow version #-1 \"FL Prospect Finder Text\" for flow with Unique Name \"FL_Prospect_Finder_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UKddFSAT"
+        },
+        "Action": "deactivatedinteractiondefinitionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-20T00:30:40.000+0000",
+        "Display": "Deactivated \"System Mode without Sharing\" for flow with Name \"FL Prospect Finder Text\" and Unique Name \"FL_Prospect_Finder_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UN8KXSA1"
+        },
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-20T00:32:41.000+0000",
+        "Display": "Created flow version #1 \"FL Prospect Finder Text\" for flow with Unique Name \"FL_Prospect_Finder_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UN8KYSA1"
+        },
+        "Action": "deletedinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-20T00:32:43.000+0000",
+        "Display": "Deleted flow version #-1 \"FL Prospect Finder Text\" for flow with Unique Name \"FL_Prospect_Finder_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UPi8zSAD"
+        },
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-20T00:33:40.000+0000",
+        "Display": "Created flow version #1 \"FL Prospect Finder Text\" for flow with Unique Name \"FL_Prospect_Finder_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UPi90SAD"
+        },
+        "Action": "deletedinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-20T00:33:42.000+0000",
+        "Display": "Deleted flow version #-1 \"FL Prospect Finder Text\" for flow with Unique Name \"FL_Prospect_Finder_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UMrK4SAL"
+        },
+        "Action": "activatedinteractiondefinitionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-20T00:35:19.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for flow with Name \"FL Prospect Finder Text\" and Unique Name \"FL_Prospect_Finder_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UQtAMSA1"
+        },
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-20T00:42:20.000+0000",
+        "Display": "Created flow version #2 \"FL Prospect Finder Text\" for flow with Unique Name \"FL_Prospect_Finder_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UNEzqSAH"
+        },
+        "Action": "activatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-20T00:42:38.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for version #2 of flow with Unique Name \"FL_Prospect_Finder_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001UNEzrSAH"
+        },
+        "Action": "deactivatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-08-20T00:42:38.000+0000",
+        "Display": "Deactivated \"System Mode without Sharing\" for version #1 of flow with Unique Name \"FL_Prospect_Finder_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001Uc1IUSAZ"
         },
         "Action": "PermSetC2CLicenselessMigration",
         "Section": null,
@@ -18,7 +607,7 @@
           },
           "Name": "Automated Process"
         },
-        "CreatedDate": "2025-08-18T05:04:35.000+0000",
+        "CreatedDate": "2025-08-20T05:06:02.000+0000",
         "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
       }
     ]
