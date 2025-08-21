@@ -2,15 +2,15 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>64.0</apiVersion>
     <assignments>
-        <name>Append_Line</name>
-        <label>Append Line</label>
+        <name>Copy_1_of_Append_Line</name>
+        <label>Copy 1 of Append Line</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <assignmentItems>
             <assignToReference>message</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>tt_Line</elementReference>
+                <elementReference>tt_Line1</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -21,7 +21,140 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Loop_Prospects</targetReference>
+            <targetReference>Copy_1_of_Loop_Prospects</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_NoRows</name>
+        <label>Copy 1 of NoRows</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>message</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>No prospects matched your filters.</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>isDone</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_2_of_Append_Line</name>
+        <label>Copy 2 of Append Line</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>message</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>tt_Line2</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>count</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_2_of_Loop_Prospects</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_2_of_NoRows</name>
+        <label>Copy 2 of NoRows</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>message</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>No prospects matched your filters.</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>isDone</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_3_of_Append_Line</name>
+        <label>Copy 3 of Append Line</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>message</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>tt_Line3</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>count</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_3_of_Loop_Prospects</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_3_of_NoRows</name>
+        <label>Copy 3 of NoRows</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>message</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>No prospects matched your filters.</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>isDone</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_4_of_Append_Line</name>
+        <label>Copy 4 of Append Line</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>message</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>tt_Line4</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>count</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_4_of_Loop_Prospects</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_4_of_NoRows</name>
+        <label>Copy 4 of NoRows</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>message</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>No prospects matched your filters.</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>isDone</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -44,7 +177,7 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Get_Prospects</targetReference>
+            <targetReference>WhichFilters</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -60,25 +193,9 @@
             </value>
         </assignmentItems>
     </assignments>
-    <assignments>
-        <name>NoRows</name>
-        <label>NoRows</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignmentItems>
-            <assignToReference>message</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <stringValue>No prospects matched your filters.</stringValue>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>isDone</targetReference>
-        </connector>
-    </assignments>
     <decisions>
-        <name>AnyRows</name>
-        <label>AnyRows?</label>
+        <name>Copy_1_of_AnyRows</name>
+        <label>Copy 1 of AnyRows?</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <defaultConnector>
@@ -86,7 +203,7 @@
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>No</name>
+            <name>Copy_1_of_No</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>count</leftValueReference>
@@ -96,23 +213,23 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>NoRows</targetReference>
+                <targetReference>Copy_1_of_NoRows</targetReference>
             </connector>
-            <label>No</label>
+            <label>Copy 1 of No</label>
         </rules>
     </decisions>
     <decisions>
-        <name>UnderLimit</name>
-        <label>UnderLimit?</label>
+        <name>Copy_1_of_UnderLimit</name>
+        <label>Copy 1 of UnderLimit?</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
-            <targetReference>AnyRows</targetReference>
+            <targetReference>Copy_1_of_AnyRows</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>Yes</name>
+            <name>Copy_1_of_Yes</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>count</leftValueReference>
@@ -122,26 +239,297 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Append_Line</targetReference>
+                <targetReference>Copy_1_of_Append_Line</targetReference>
             </connector>
-            <label>Yes</label>
+            <label>Copy 1 of Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_2_of_AnyRows</name>
+        <label>Copy 2 of AnyRows?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>isDone</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_2_of_No</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>count</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_NoRows</targetReference>
+            </connector>
+            <label>Copy 2 of No</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_2_of_UnderLimit</name>
+        <label>Copy 2 of UnderLimit?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Copy_2_of_AnyRows</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_2_of_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>count</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <elementReference>limitN</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_Append_Line</targetReference>
+            </connector>
+            <label>Copy 2 of Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_3_of_AnyRows</name>
+        <label>Copy 3 of AnyRows?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>isDone</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_3_of_No</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>count</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_3_of_NoRows</targetReference>
+            </connector>
+            <label>Copy 3 of No</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_3_of_UnderLimit</name>
+        <label>Copy 3 of UnderLimit?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Copy_3_of_AnyRows</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_3_of_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>count</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <elementReference>limitN</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_3_of_Append_Line</targetReference>
+            </connector>
+            <label>Copy 3 of Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_4_of_AnyRows</name>
+        <label>Copy 4 of AnyRows?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>isDone</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_4_of_No</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>count</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_4_of_NoRows</targetReference>
+            </connector>
+            <label>Copy 4 of No</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_4_of_UnderLimit</name>
+        <label>Copy 4 of UnderLimit?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Copy_4_of_AnyRows</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_4_of_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>count</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <elementReference>limitN</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_4_of_Append_Line</targetReference>
+            </connector>
+            <label>Copy 4 of Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>WhichFilters</name>
+        <label>WhichFilters</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>GetProspectsBoth4</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Neither</defaultConnectorLabel>
+        <rules>
+            <name>BothProvided</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>industry</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>status</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetProspects1</targetReference>
+            </connector>
+            <label>BothProvided</label>
+        </rules>
+        <rules>
+            <name>OnlyIndustry</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>industry</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>status</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetProspects2</targetReference>
+            </connector>
+            <label>OnlyIndustry</label>
+        </rules>
+        <rules>
+            <name>OnlyStatus</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>industry</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>status</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetProspectsBoth3</targetReference>
+            </connector>
+            <label>OnlyStatus</label>
         </rules>
     </decisions>
     <environments>Default</environments>
     <interviewLabel>FL Prospect Finder Text {!$Flow.CurrentDateTime}</interviewLabel>
     <label>FL Prospect Finder Text</label>
     <loops>
-        <name>Loop_Prospects</name>
-        <label>Loop Prospects</label>
+        <name>Copy_1_of_Loop_Prospects</name>
+        <label>Copy 1 of Loop Prospects</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
-        <collectionReference>Get_Prospects</collectionReference>
+        <collectionReference>GetProspects1</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
-            <targetReference>UnderLimit</targetReference>
+            <targetReference>Copy_1_of_UnderLimit</targetReference>
         </nextValueConnector>
         <noMoreValuesConnector>
-            <targetReference>AnyRows</targetReference>
+            <targetReference>Copy_1_of_AnyRows</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Copy_2_of_Loop_Prospects</name>
+        <label>Copy 2 of Loop Prospects</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <collectionReference>GetProspects2</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Copy_2_of_UnderLimit</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Copy_2_of_AnyRows</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Copy_3_of_Loop_Prospects</name>
+        <label>Copy 3 of Loop Prospects</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <collectionReference>GetProspectsBoth3</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Copy_3_of_UnderLimit</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Copy_3_of_AnyRows</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Copy_4_of_Loop_Prospects</name>
+        <label>Copy 4 of Loop Prospects</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <collectionReference>GetProspectsBoth4</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Copy_4_of_UnderLimit</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Copy_4_of_AnyRows</targetReference>
         </noMoreValuesConnector>
     </loops>
     <processMetadataValues>
@@ -164,15 +552,15 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordLookups>
-        <name>Get_Prospects</name>
-        <label>Get Prospects</label>
+        <name>GetProspects1</name>
+        <label>Get Prospects Both</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Loop_Prospects</targetReference>
+            <targetReference>Copy_1_of_Loop_Prospects</targetReference>
         </connector>
-        <filterLogic>(1 AND 2) OR 3 OR 4 OR (5 AND 6)</filterLogic>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Industry</field>
             <operator>Contains</operator>
@@ -187,6 +575,22 @@
                 <elementReference>status</elementReference>
             </value>
         </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Lead</object>
+        <sortField>LastModifiedDate</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>GetProspects2</name>
+        <label>Get Prospects Industry</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_2_of_Loop_Prospects</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Industry</field>
             <operator>Contains</operator>
@@ -194,6 +598,22 @@
                 <elementReference>industry</elementReference>
             </value>
         </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Lead</object>
+        <sortField>LastModifiedDate</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>GetProspectsBoth3</name>
+        <label>Get Prospects Status</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_3_of_Loop_Prospects</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>Status</field>
             <operator>Contains</operator>
@@ -201,20 +621,21 @@
                 <elementReference>status</elementReference>
             </value>
         </filters>
-        <filters>
-            <field>Industry</field>
-            <operator>IsNull</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Status</field>
-            <operator>IsNull</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Lead</object>
+        <sortField>LastModifiedDate</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>GetProspectsBoth4</name>
+        <label>Get Prospects All</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_4_of_Loop_Prospects</targetReference>
+        </connector>
         <getFirstRecordOnly>false</getFirstRecordOnly>
         <object>Lead</object>
         <sortField>LastModifiedDate</sortField>
@@ -236,9 +657,24 @@
         <text>&lt;p&gt;Prospects:&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
-        <name>tt_Line</name>
+        <name>tt_Line1</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;{!Loop_Prospects.Name}&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Industry: {!Loop_Prospects.Industry}&lt;/li&gt;&lt;li&gt;Status: {!Loop_Prospects.Status}&lt;/li&gt;&lt;li&gt;Owner: {!Loop_Prospects.Owner:User.Name}&lt;/li&gt;&lt;li&gt;Employees: {!Loop_Prospects.NumberOfEmployees}&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+        <text>&lt;p&gt;{!Copy_1_of_Loop_Prospects.Name}&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Industry: {!Copy_1_of_Loop_Prospects.Industry}&lt;/li&gt;&lt;li&gt;Status: {!Copy_1_of_Loop_Prospects.Status}&lt;/li&gt;&lt;li&gt;Owner: {!Copy_1_of_Loop_Prospects.Owner:User.Name}&lt;/li&gt;&lt;li&gt;Employees: {!Copy_1_of_Loop_Prospects.NumberOfEmployees}&lt;/li&gt;&lt;/ul&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tt_Line2</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;{!Copy_2_of_Loop_Prospects.Name}&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Industry: {!Copy_2_of_Loop_Prospects.Industry}&lt;/li&gt;&lt;li&gt;Status: {!Copy_2_of_Loop_Prospects.Status}&lt;/li&gt;&lt;li&gt;Owner: {!Copy_2_of_Loop_Prospects.Owner:User.Name}&lt;/li&gt;&lt;li&gt;Employees: {!Copy_2_of_Loop_Prospects.NumberOfEmployees}&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tt_Line3</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;{!Copy_3_of_Loop_Prospects.Name}&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Industry: {!Copy_3_of_Loop_Prospects.Industry}&lt;/li&gt;&lt;li&gt;Status: {!Copy_3_of_Loop_Prospects.Status}&lt;/li&gt;&lt;li&gt;Owner: {!Copy_3_of_Loop_Prospects.Owner:User.Name}&lt;/li&gt;&lt;li&gt;Employees: {!Copy_3_of_Loop_Prospects.NumberOfEmployees}&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tt_Line4</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;{!Copy_4_of_Loop_Prospects.Name}&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Industry: {!Copy_4_of_Loop_Prospects.Industry}&lt;/li&gt;&lt;li&gt;Status: {!Copy_4_of_Loop_Prospects.Status}&lt;/li&gt;&lt;li&gt;Owner: {!Copy_4_of_Loop_Prospects.Owner:User.Name}&lt;/li&gt;&lt;li&gt;Employees: {!Copy_4_of_Loop_Prospects.NumberOfEmployees}&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
     </textTemplates>
     <variables>
         <name>count</name>
@@ -272,9 +708,6 @@
         <isInput>true</isInput>
         <isOutput>false</isOutput>
         <scale>0</scale>
-        <value>
-            <numberValue>10.0</numberValue>
-        </value>
     </variables>
     <variables>
         <name>message</name>
