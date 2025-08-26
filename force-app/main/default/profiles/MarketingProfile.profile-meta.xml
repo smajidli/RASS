@@ -209,6 +209,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>FL_My_Open_WorkItems_Text</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>FL_Prospect_Finder_Text</flow>
     </flowAccesses>
     <flowAccesses>
