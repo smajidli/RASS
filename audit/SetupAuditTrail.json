@@ -1,19 +1,42 @@
 {
   "status": 0,
   "result": {
-    "totalSize": 1,
+    "totalSize": 2,
     "done": true,
     "records": [
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001dVRpoSAG"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001eIYvXSAW"
         },
-        "Action": "value_MAX_STREAMING_TOPICS_PROV",
+        "Action": "PermSetC2CLicenselessMigration",
         "Section": null,
-        "CreatedBy": null,
-        "CreatedDate": "2025-08-27T05:21:24.000+0000",
-        "Display": "Max number of streaming topics"
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
+          },
+          "Name": "Automated Process"
+        },
+        "CreatedDate": "2025-08-28T05:22:37.000+0000",
+        "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001f2mylSAA"
+        },
+        "Action": "PermSetC2CLicenselessMigration",
+        "Section": null,
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
+          },
+          "Name": "Automated Process"
+        },
+        "CreatedDate": "2025-08-29T05:21:00.000+0000",
+        "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
       }
     ]
   }
