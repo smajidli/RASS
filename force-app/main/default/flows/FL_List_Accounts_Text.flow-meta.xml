@@ -192,7 +192,7 @@
         <isInput>false</isInput>
         <isOutput>true</isOutput>
         <value>
-            <stringValue>Showing {!v_limitN} accounts:</stringValue>
+            <stringValue>Showing accounts:</stringValue>
         </value>
     </variables>
     <variables>

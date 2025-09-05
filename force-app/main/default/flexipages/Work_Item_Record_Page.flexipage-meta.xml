@@ -207,18 +207,14 @@
                 <identifier>RecordContactIdField</identifier>
             </fieldInstance>
         </itemInstances>
-        <name>Facet-a2727fe0-34e5-4515-bf59-a37f25e49f27</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>readonly</value>
+                    <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.CaseNumber</fieldItem>
-                <identifier>RecordCaseNumberField2</identifier>
+                <fieldItem>Record.Year_End_Date__c</fieldItem>
+                <identifier>RecordYear_End_Date__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -227,8 +223,32 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Due_Status_Code__c</fieldItem>
+                <identifier>RecordDue_Status_Code_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-a2727fe0-34e5-4515-bf59-a37f25e49f27</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Total_Hours_Logged__c</fieldItem>
                 <identifier>RecordTotal_Hours_Logged_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Total_Hours_Billed__c</fieldItem>
+                <identifier>RecordTotal_Hours_Billed_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -249,6 +269,26 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.OwnerId</fieldItem>
                 <identifier>RecordOwnerIdField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Due_Date__c</fieldItem>
+                <identifier>RecordDue_Date__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Due_Status_Flag__c</fieldItem>
+                <identifier>RecordDue_Status_Flag__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-bd3bd974-163b-4818-9d7b-c000e4c2b86f</name>

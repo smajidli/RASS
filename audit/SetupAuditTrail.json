@@ -1,43 +1,9 @@
 {
   "status": 0,
   "result": {
-    "totalSize": 3,
+    "totalSize": 78,
     "done": true,
     "records": [
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001kLc6QSAS"
-        },
-        "Action": "insertAuthProvider",
-        "Section": "Auth. Providers",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-09-03T04:20:03.000+0000",
-        "Display": "Created Auth. Provider LinkedIn Snap Data Cloud"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001kNiYuSAK"
-        },
-        "Action": "PermSetC2CLicenselessMigration",
-        "Section": null,
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-09-03T05:00:49.000+0000",
-        "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
-      },
       {
         "attributes": {
           "type": "SetupAuditTrail",
@@ -53,6 +19,1309 @@
           "Name": "Automated Process"
         },
         "CreatedDate": "2025-09-04T04:59:42.000+0000",
+        "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lVgE6SAK"
+        },
+        "Action": "value_MAX_STREAMING_TOPICS_PROV",
+        "Section": null,
+        "CreatedBy": null,
+        "CreatedDate": "2025-09-04T05:29:23.000+0000",
+        "Display": "Max number of streaming topics"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lx8CWSAY"
+        },
+        "Action": "createdCFCustom",
+        "Section": "Custom Objects",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:14:16.000+0000",
+        "Display": "Created custom field Comments (Long Text Area) on Time Logs"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lx8CXSAY"
+        },
+        "Action": "custentlayout",
+        "Section": "Custom Objects",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:14:16.000+0000",
+        "Display": "Changed Time Log page layout Time Track Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001luyFnSAI"
+        },
+        "Action": "changedFlexiPage",
+        "Section": "Lightning Pages",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:14:19.000+0000",
+        "Display": "Changed Lightning Page: Time Track Record Page"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lwVHbSAM"
+        },
+        "Action": "createdCF",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:16:08.000+0000",
+        "Display": "Created custom field: Total Hours Billed (Number)"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lwVHcSAM"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:16:08.000+0000",
+        "Display": "Changed Cases page layout Case (Marketing) Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lwVHdSAM"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:16:08.000+0000",
+        "Display": "Changed Cases page layout Case (Sales) Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lwVHeSAM"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:16:08.000+0000",
+        "Display": "Changed Cases page layout Case (Support) Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lwVHfSAM"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:16:08.000+0000",
+        "Display": "Changed Cases page layout Case Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lwVHgSAM"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:16:08.000+0000",
+        "Display": "Changed Cases page layout Close Case Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lx6KRSAY"
+        },
+        "Action": "changedFlexiPage",
+        "Section": "Lightning Pages",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:16:12.000+0000",
+        "Display": "Changed Lightning Page: Work Item Record Page"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lweo0SAA"
+        },
+        "Action": "createdCF",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:19:13.000+0000",
+        "Display": "Created custom field: Year End Date (Date)"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lweo1SAA"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:19:13.000+0000",
+        "Display": "Changed Cases page layout Case (Marketing) Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lweo2SAA"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:19:13.000+0000",
+        "Display": "Changed Cases page layout Case (Sales) Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lweo3SAA"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:19:13.000+0000",
+        "Display": "Changed Cases page layout Case (Support) Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lweo4SAA"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:19:13.000+0000",
+        "Display": "Changed Cases page layout Case Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lweo5SAA"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:19:13.000+0000",
+        "Display": "Changed Cases page layout Close Case Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lx7uoSAA"
+        },
+        "Action": "changedFlexiPage",
+        "Section": "Lightning Pages",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:19:16.000+0000",
+        "Display": "Changed Lightning Page: Work Item Record Page"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lxvpuSAA"
+        },
+        "Action": "createdCF",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:21:36.000+0000",
+        "Display": "Created custom field: Due Date (Date)"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lxvpvSAA"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:21:37.000+0000",
+        "Display": "Changed Cases page layout Case (Marketing) Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lxvpwSAA"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:21:37.000+0000",
+        "Display": "Changed Cases page layout Case (Sales) Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lxvpxSAA"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:21:37.000+0000",
+        "Display": "Changed Cases page layout Case (Support) Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lxvpySAA"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:21:37.000+0000",
+        "Display": "Changed Cases page layout Case Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lxvpzSAA"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:21:37.000+0000",
+        "Display": "Changed Cases page layout Close Case Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lxdoYSAQ"
+        },
+        "Action": "changedFlexiPage",
+        "Section": "Lightning Pages",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:21:38.000+0000",
+        "Display": "Changed Lightning Page: Work Item Record Page"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lx6NeSAI"
+        },
+        "Action": "changedFlexiPage",
+        "Section": "Lightning Pages",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:28:08.000+0000",
+        "Display": "Changed Lightning Page: Work Item Record Page"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lwSroSAE"
+        },
+        "Action": "createdinteractiondefinition",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:42:02.000+0000",
+        "Display": "Created flow with Name \"Auto Dates\" and Unique Name \"Auto_Dates\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lxTH3SAM"
+        },
+        "Action": "activatedinteractiondefinition",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:42:06.000+0000",
+        "Display": "Activated flow with Name \"Auto Dates\" and Unique Name \"Auto_Dates\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lwzY9SAI"
+        },
+        "Action": "changedFlexiPage",
+        "Section": "Lightning Pages",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:42:11.000+0000",
+        "Display": "Changed Lightning Page: Work Item Record Page"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lyMgPSAU"
+        },
+        "Action": "createdCF",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:47:58.000+0000",
+        "Display": "Created custom field: Due Status Code (Picklist)"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lyMgQSAU"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:47:58.000+0000",
+        "Display": "Changed Cases page layout Case (Marketing) Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lyMgRSAU"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:47:58.000+0000",
+        "Display": "Changed Cases page layout Case (Sales) Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lyMgSSAU"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:47:58.000+0000",
+        "Display": "Changed Cases page layout Case (Support) Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lyMgTSAU"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:47:58.000+0000",
+        "Display": "Changed Cases page layout Case Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lyMgUSAU"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:47:58.000+0000",
+        "Display": "Changed Cases page layout Close Case Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lwddQSAQ"
+        },
+        "Action": "changedFlexiPage",
+        "Section": "Lightning Pages",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:48:01.000+0000",
+        "Display": "Changed Lightning Page: Work Item Record Page"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lxb1lSAA"
+        },
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:56:10.000+0000",
+        "Display": "Created flow version #2 \"Auto Dates\" for flow with Unique Name \"Auto_Dates\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lw6NASAY"
+        },
+        "Action": "activatedinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:57:04.000+0000",
+        "Display": "Activated flow version #2 \"Auto Dates\" for flow with Unique Name \"Auto_Dates\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lw6NBSAY"
+        },
+        "Action": "deactivatedinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:57:04.000+0000",
+        "Display": "Deactivated flow version #1 \"Auto Dates\" for flow with Unique Name \"Auto_Dates\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lyGuRSAU"
+        },
+        "Action": "createdCFFormula",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:58:11.000+0000",
+        "Display": "Created custom formula field: Due Status Flag (Text)"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lyGuSSAU"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:58:11.000+0000",
+        "Display": "Changed Cases page layout Case (Marketing) Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lyGuTSAU"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:58:11.000+0000",
+        "Display": "Changed Cases page layout Case (Sales) Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lyGuUSAU"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:58:11.000+0000",
+        "Display": "Changed Cases page layout Case (Support) Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lyGuVSAU"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:58:11.000+0000",
+        "Display": "Changed Cases page layout Case Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lyGuWSAU"
+        },
+        "Action": "caselayout",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:58:11.000+0000",
+        "Display": "Changed Cases page layout Close Case Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lyH2bSAE"
+        },
+        "Action": "changedFlexiPage",
+        "Section": "Lightning Pages",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:58:13.000+0000",
+        "Display": "Changed Lightning Page: Work Item Record Page"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lxY0fSAE"
+        },
+        "Action": "createdStaticResource",
+        "Section": "Static Resource",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T22:59:47.000+0000",
+        "Display": "Created Static Resource Flag_Red"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lyGhbSAE"
+        },
+        "Action": "createdStaticResource",
+        "Section": "Static Resource",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T23:00:27.000+0000",
+        "Display": "Created Static Resource Flag_Yellow"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lyNxVSAU"
+        },
+        "Action": "createdStaticResource",
+        "Section": "Static Resource",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T23:00:38.000+0000",
+        "Display": "Created Static Resource Flag_Green"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lwyYGSAY"
+        },
+        "Action": "changedFlexiPage",
+        "Section": "Lightning Pages",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T23:01:55.000+0000",
+        "Display": "Changed Lightning Page: Work Item Record Page"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lxh2GSAQ"
+        },
+        "Action": "savedlistlayoutCase",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T23:31:02.000+0000",
+        "Display": "Changed Case search layout Search Results"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lxh2HSAQ"
+        },
+        "Action": "savedlistlayoutCase",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T23:31:02.000+0000",
+        "Display": "Changed Case search layout List View"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lz9naSAA"
+        },
+        "Action": "autoAssignedColors",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T23:39:48.000+0000",
+        "Display": "Auto assigned colors to Due Status Code picklist"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lyrsNSAQ"
+        },
+        "Action": "changedPicklistWithColor",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T23:40:02.000+0000",
+        "Display": "Changed Due Status Code picklist value Red color from #b6fce to #ff0000"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lyDDSSA2"
+        },
+        "Action": "changedPicklistWithColor",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T23:40:13.000+0000",
+        "Display": "Changed Due Status Code picklist value Yellow color from #78c953 to #ffff66"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lwermSAA"
+        },
+        "Action": "changedPicklistWithColor",
+        "Section": "Customize Cases",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-04T23:40:22.000+0000",
+        "Display": "Changed Due Status Code picklist value Green color from #e27001 to #33ff33"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001m0IvFSAU"
+        },
+        "Action": "changedFlexiPage",
+        "Section": "Lightning Pages",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-05T00:22:43.000+0000",
+        "Display": "Changed Lightning Page: Work Item Record Page"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lzqHTSAY"
+        },
+        "Action": "changedFlexiPage",
+        "Section": "Lightning Pages",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-05T00:26:37.000+0000",
+        "Display": "Changed Lightning Page: Home Page Default"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001m0VR3SAM"
+        },
+        "Action": "changedFlexiPage",
+        "Section": "Lightning Pages",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-05T00:31:16.000+0000",
+        "Display": "Changed Lightning Page: Home Page Default"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lyGumSAE"
+        },
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-05T00:40:47.000+0000",
+        "Display": "Created flow version #12 \"FL List Accounts Text\" for flow with Unique Name \"FL_List_Accounts_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001m0hooSAA"
+        },
+        "Action": "activatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-05T00:40:51.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for version #12 of flow with Unique Name \"FL_List_Accounts_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001m0hopSAA"
+        },
+        "Action": "deactivatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-05T00:40:51.000+0000",
+        "Display": "Deactivated \"System Mode without Sharing\" for version #11 of flow with Unique Name \"FL_List_Accounts_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001m1N4cSAE"
+        },
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-05T01:17:32.000+0000",
+        "Display": "Created flow version #5 \"FL List WorkItems Text\" for flow with Unique Name \"FL_List_WorkItems_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001m1UpeSAE"
+        },
+        "Action": "activatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-05T01:17:38.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for version #5 of flow with Unique Name \"FL_List_WorkItems_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001m1UpfSAE"
+        },
+        "Action": "deactivatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-05T01:17:38.000+0000",
+        "Display": "Deactivated \"System Mode without Sharing\" for version #4 of flow with Unique Name \"FL_List_WorkItems_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lzr5TSAQ"
+        },
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-05T01:32:56.000+0000",
+        "Display": "Created flow version #6 \"FL List WorkItems Text\" for flow with Unique Name \"FL_List_WorkItems_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lzzmGSAQ"
+        },
+        "Action": "activatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-05T01:33:33.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for version #6 of flow with Unique Name \"FL_List_WorkItems_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lzzmHSAQ"
+        },
+        "Action": "deactivatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-05T01:33:33.000+0000",
+        "Display": "Deactivated \"System Mode without Sharing\" for version #5 of flow with Unique Name \"FL_List_WorkItems_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lzzHeSAI"
+        },
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-05T01:35:47.000+0000",
+        "Display": "Created flow version #7 \"FL List WorkItems Text\" for flow with Unique Name \"FL_List_WorkItems_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001m1QikSAE"
+        },
+        "Action": "activatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-05T01:35:52.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for version #7 of flow with Unique Name \"FL_List_WorkItems_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001m1QilSAE"
+        },
+        "Action": "deactivatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-05T01:35:52.000+0000",
+        "Display": "Deactivated \"System Mode without Sharing\" for version #6 of flow with Unique Name \"FL_List_WorkItems_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lywk2SAA"
+        },
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-05T01:40:28.000+0000",
+        "Display": "Created flow version #9 \"FL WorkItem Fact Text\" for flow with Unique Name \"FL_WorkItem_Fact_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lyUpLSAU"
+        },
+        "Action": "activatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-05T01:40:34.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for version #9 of flow with Unique Name \"FL_WorkItem_Fact_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001lyUpMSAU"
+        },
+        "Action": "deactivatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-05T01:40:34.000+0000",
+        "Display": "Deactivated \"System Mode without Sharing\" for version #8 of flow with Unique Name \"FL_WorkItem_Fact_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001m3mn7SAA"
+        },
+        "Action": "createdinteractiondefinition",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-05T02:56:39.000+0000",
+        "Display": "Created flow with Name \"FL List Contacts Text\" and Unique Name \"FL_List_Contacts_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001m3cHaSAI"
+        },
+        "Action": "activatedinteractiondefinitionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Samad Majidli"
+        },
+        "CreatedDate": "2025-09-05T02:56:48.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for flow with Name \"FL List Contacts Text\" and Unique Name \"FL_List_Contacts_Text\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00001m7DhOSAU"
+        },
+        "Action": "PermSetC2CLicenselessMigration",
+        "Section": null,
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
+          },
+          "Name": "Automated Process"
+        },
+        "CreatedDate": "2025-09-05T05:19:46.000+0000",
         "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
       }
     ]

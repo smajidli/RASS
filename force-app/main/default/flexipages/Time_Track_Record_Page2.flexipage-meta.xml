@@ -59,6 +59,12 @@
                 <identifier>RecordActivity__cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Comments__c</fieldItem>
+                <identifier>RecordComments__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-1b3a3053-ea58-4520-943e-4bedd1366078</name>
         <type>Facet</type>
     </flexiPageRegions>
