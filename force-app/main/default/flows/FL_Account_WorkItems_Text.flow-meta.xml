@@ -266,21 +266,21 @@
             <field>Status</field>
             <operator>Contains</operator>
             <value>
-                <stringValue>Requesting_Documents</stringValue>
+                <stringValue>Requesting Documents</stringValue>
             </value>
         </filters>
         <filters>
             <field>Status</field>
             <operator>Contains</operator>
             <value>
-                <stringValue>Preparing_File</stringValue>
+                <stringValue>Preparing File</stringValue>
             </value>
         </filters>
         <filters>
             <field>Status</field>
             <operator>Contains</operator>
             <value>
-                <stringValue>Reviewing_File</stringValue>
+                <stringValue>Reviewing File</stringValue>
             </value>
         </filters>
         <filters>
@@ -301,7 +301,7 @@
             <field>Status</field>
             <operator>Contains</operator>
             <value>
-                <stringValue>Return_Filed</stringValue>
+                <stringValue>Return Filed</stringValue>
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>

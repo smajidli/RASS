@@ -536,7 +536,7 @@
                                 <criteria>
                                     <leftValue>{!Record.Status}</leftValue>
                                     <operator>EQUAL</operator>
-                                    <rightValue>Requesting_Documents</rightValue>
+                                    <rightValue>Requesting Documents</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -546,7 +546,7 @@
                                 <criteria>
                                     <leftValue>{!Record.Status}</leftValue>
                                     <operator>EQUAL</operator>
-                                    <rightValue>Preparing_File</rightValue>
+                                    <rightValue>Preparing File</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
@@ -556,7 +556,7 @@
                                 <criteria>
                                     <leftValue>{!Record.Status}</leftValue>
                                     <operator>EQUAL</operator>
-                                    <rightValue>Reviewing_File</rightValue>
+                                    <rightValue>Reviewing File</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>

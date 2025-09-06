@@ -255,7 +255,15 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>FL_Request_YearEnd_Docs</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>FL_Services_Expiring_Text</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>FL_Update_WorkItem</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
@@ -414,6 +422,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>DandBCompany-D%26B Company Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DataSemanticSearch-Search Index Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>DataStream-Data Stream Layout</layout>

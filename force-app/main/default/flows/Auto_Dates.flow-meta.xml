@@ -185,6 +185,14 @@
         <connector>
             <targetReference>Set_YearEnd_Due</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Year_End_Date__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
         <object>Case</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordBeforeSave</triggerType>
