@@ -197,7 +197,7 @@
             <assignToReference>toEmail</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>ById.ContactEmail</elementReference>
+                <elementReference>ByNumber.ContactEmail</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -258,7 +258,7 @@
             <name>No</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>ById.ContactEmail</leftValueReference>
+                <leftValueReference>ByNumber.ContactEmail</leftValueReference>
                 <operator>IsBlank</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
@@ -283,7 +283,7 @@
             <name>No2</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>ById.ContactId</leftValueReference>
+                <leftValueReference>ByNumber.ContactId</leftValueReference>
                 <operator>IsBlank</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
@@ -308,7 +308,7 @@
             <name>Yes</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>ById.AccountId</leftValueReference>
+                <leftValueReference>ByNumber.AccountId</leftValueReference>
                 <operator>IsBlank</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
@@ -544,8 +544,8 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordLookups>
-        <name>ById</name>
-        <label>ById</label>
+        <name>ByNumber</name>
+        <label>ByNumber</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
@@ -554,8 +554,8 @@
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>Id</field>
-            <operator>EqualTo</operator>
+            <field>CaseNumber</field>
+            <operator>Contains</operator>
             <value>
                 <elementReference>recordKey</elementReference>
             </value>
@@ -627,7 +627,7 @@
             <field>Id</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>ById.AccountId</elementReference>
+                <elementReference>ByNumber.AccountId</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
@@ -648,7 +648,7 @@
             <field>Id</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>ById.ContactId</elementReference>
+                <elementReference>ByNumber.ContactId</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
@@ -660,14 +660,14 @@
         <locationX>0</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>ById</targetReference>
+            <targetReference>ByNumber</targetReference>
         </connector>
     </start>
     <status>Active</status>
     <textTemplates>
         <name>tt_Body</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Hello,&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please send the requested year-end documents for Work Item {!ById.CaseNumber}: {!ById.Subject}.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;{!messageBody}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Thank you.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+        <text>&lt;p&gt;Hello,&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please send the requested year-end documents for Work Item {!ByNumber.CaseNumber}: {!ByNumber.Subject}.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;{!messageBody}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Thank you.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
         <name>tt_NoRecipient</name>
@@ -682,12 +682,12 @@
     <textTemplates>
         <name>tt_Subject</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>
-        <text>Request: Year-End Documents for {!ById.CaseNumber}</text>
+        <text>Request: Year-End Documents for {!ByNumber.CaseNumber}</text>
     </textTemplates>
     <textTemplates>
         <name>tt_Summary</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Year-end documents request sent for {!ById.CaseNumber} to {!toEmail}.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+        <text>&lt;p&gt;Year-end documents request sent for {!ByNumber.CaseNumber} to {!toEmail}.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
     </textTemplates>
     <variables>
         <name>contactName</name>
