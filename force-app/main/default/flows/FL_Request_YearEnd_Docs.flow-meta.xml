@@ -20,14 +20,11 @@
         <inputParameters>
             <name>senderType</name>
             <value>
-                <stringValue>OrgWideEmailAddress</stringValue>
+                <stringValue>CurrentUser</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
             <name>senderAddress</name>
-            <value>
-                <stringValue>samadmajidli23@gmail.com</stringValue>
-            </value>
         </inputParameters>
         <inputParameters>
             <name>composeEmailContent</name>

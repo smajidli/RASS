@@ -235,6 +235,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>FL_Change_WorkItem_Owner</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>FL_List_Accounts_Text</flow>
     </flowAccesses>
     <flowAccesses>
@@ -263,11 +267,19 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>FL_Submit_WorkItem_For_Approval</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>FL_Update_WorkItem</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
         <flow>FL_WorkItem_Fact_Text</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Process_Simple_Approval</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
@@ -464,6 +476,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>FinanceTransaction-Finance Transaction Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FlowOrchestration-Orchestration Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>FlowRecord-Flow Layout</layout>

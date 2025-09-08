@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>64.0</apiVersion>
+    <constants>
+        <description>Stores the value for the status of a step that&#39;s been approved. The value of the constant must be Approve. This constant isn&#39;t used in the default version of the flow approval process. Use it if you have cases where you need to check to see if one or more approval steps were approved. Don’t use any other values. Using other values causes the approval to fail.</description>
+        <name>Approved</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Approve</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Stores the value for the status of a step that&#39;s been rejected. The value of the constant must be Reject. This constant isn&#39;t used in the default version of the flow approval process. Use it if you have cases where you need to check to see if one or more approval steps were rejected. Don’t use any other values. Using other values causes the approval to fail.</description>
+        <name>Rejected</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Reject</stringValue>
+        </value>
+    </constants>
+    <environments>Default</environments>
+    <interviewLabel>Process Simple Approval {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Process Simple Approval</label>
+    <orchestratedStages>
+        <description>Sends an approval request to the configured reviewer. If your approval submission has approval work items that can be concurrently reviewed by different approvers, add more approval steps to this stage. If you have other processing to do, add background steps.Then update the label, API name, and description to reflect what this stage does. If there are more reviews for this submission that take place after the reviews in this stage, add Decision elements and Stage elements to this flow approval process to meet your needs.</description>
+        <name>Process_an_Approval_Request</name>
+        <label>Process an Approval Request</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <exitConditionLogic>and</exitConditionLogic>
+        <stageSteps>
+            <description>Creates an approval work item that runs the Review Approval Request screen flow for the specified approver. Select an approver to complete the step. If you have a custom screen flow to call for this approval step, for Action, remove Review Approval Request and select your custom screen flow. Lastly, update the label, API name, and description to reflect what this step does.</description>
+            <name>SendItemforApproval</name>
+            <actionName>standard_approvals__ReviewAppvlRqst</actionName>
+            <actionType>stepApproval</actionType>
+            <assignees>
+                <assignee>
+                    <elementReference>firstApprover</elementReference>
+                </assignee>
+                <assigneeType>User</assigneeType>
+            </assignees>
+            <entryConditionLogic>and</entryConditionLogic>
+            <exitConditionLogic>and</exitConditionLogic>
+            <inputParameters>
+                <name>approvalInformation</name>
+                <value>
+                    <elementReference>submissionInformation</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>ActionInput__RecordId</name>
+                <value>
+                    <elementReference>recordId</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>ActionInput__CustomEmailSubject</name>
+            </inputParameters>
+            <inputParameters>
+                <name>ActionInput__CustomEmailBody</name>
+            </inputParameters>
+            <label>Send Item for Approval</label>
+            <requiresAsyncProcessing>false</requiresAsyncProcessing>
+            <runAsUser>false</runAsUser>
+            <stepSubtype>ApprovalStep</stepSubtype>
+        </stageSteps>
+    </orchestratedStages>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>ApprovalWorkflow</processType>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Process_an_Approval_Request</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Stores the reviewer comments for the approval request and is available as output from the flow approval process.</description>
+        <name>approvalComments</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <elementReference>SendItemforApproval.Outputs.approvalComments</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the final decision of the approval submission and is available as output from the flow approval process. Valid values are Approve and Reject. Don’t use any other values. Using other values causes the approval to fail.</description>
+        <name>approvalDecision</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <elementReference>SendItemforApproval.Outputs.approvalDecision</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <description>Stores the username of the designated approver for the first approval request. Add variables if you have more than one approver for your flow approval process.  This is a required input variable.</description>
+        <name>firstApprover</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>submissionComments</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores information about the record to be approved and is passed into the flow approval process.</description>
+        <name>submissionInformation</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>submitter</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>
