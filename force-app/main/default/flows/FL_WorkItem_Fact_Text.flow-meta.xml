@@ -236,6 +236,21 @@
         </rules>
     </decisions>
     <environments>Default</environments>
+    <formulas>
+        <name>InstanceBaseUrl</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_620}, FIND(&quot;/services&quot;, {!$Api.Partner_Server_URL_620}) - 1)</expression>
+    </formulas>
+    <formulas>
+        <name>WorkItemUrlByNumber</name>
+        <dataType>String</dataType>
+        <expression>{!InstanceBaseUrl} &amp; &quot;/lightning/r/Case/&quot; &amp; {!ByNumber.Id} &amp; &quot;/view&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>WorkItemUrlBySubject</name>
+        <dataType>String</dataType>
+        <expression>{!InstanceBaseUrl} &amp; &quot;/lightning/r/Case/&quot; &amp; {!Loop_Subjects.Id} &amp; &quot;/view&quot;</expression>
+    </formulas>
     <interviewLabel>FL WorkItem Fact Text {!$Flow.CurrentDateTime}</interviewLabel>
     <label>FL WorkItem Fact Text</label>
     <loops>
@@ -329,12 +344,12 @@
     <textTemplates>
         <name>tt_One</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Work Item {!ByNumber.CaseNumber}&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Subject: {!ByNumber.Subject}&lt;/li&gt;&lt;li&gt;Account: {!ByNumber.Account.Name}&lt;/li&gt;&lt;li&gt;Status: {!ByNumber.Status}&lt;/li&gt;&lt;li&gt;Priority: {!ByNumber.Priority}&lt;/li&gt;&lt;li&gt;Due Date: {!ByNumber.Due_Date__c}&lt;/li&gt;&lt;li&gt;Due Status: {!ByNumber.Due_Status_Code__c}&lt;/li&gt;&lt;li&gt;Total Hours Billed: {!ByNumber.Total_Hours_Billed__c}&lt;/li&gt;&lt;li&gt;Owner: {!ByNumber.OwnerId}&lt;/li&gt;&lt;/ul&gt;</text>
+        <text>&lt;p&gt;Work Item &lt;a href=&quot;{!WorkItemUrlByNumber}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!ByNumber.CaseNumber}&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Subject: {!ByNumber.Subject}&lt;/li&gt;&lt;li&gt;Account: {!ByNumber.Account.Name}&lt;/li&gt;&lt;li&gt;Status: {!ByNumber.Status}&lt;/li&gt;&lt;li&gt;Priority: {!ByNumber.Priority}&lt;/li&gt;&lt;li&gt;Due: {!ByNumber.Due_Date__c}&lt;/li&gt;&lt;li&gt;Due Status: {!ByNumber.Due_Status_Code__c}&lt;/li&gt;&lt;li&gt;Total Hours Billed: {!ByNumber.Total_Hours_Billed__c}&lt;/li&gt;&lt;li&gt;Owner: {!ByNumber.OwnerId}&lt;/li&gt;&lt;/ul&gt;</text>
     </textTemplates>
     <textTemplates>
         <name>tt_Two</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Work Item {!Loop_Subjects.CaseNumber}&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Subject: {!Loop_Subjects.Subject}&lt;/li&gt;&lt;li&gt;Account: {!Loop_Subjects.Account.Name}&lt;/li&gt;&lt;li&gt;Status: {!Loop_Subjects.Status}&lt;/li&gt;&lt;li&gt;Priority: {!Loop_Subjects.Priority}&lt;/li&gt;&lt;li&gt;Due Date: {!Loop_Subjects.Due_Date__c}&lt;/li&gt;&lt;li&gt;Due Status: {!Loop_Subjects.Due_Status_Code__c}&lt;/li&gt;&lt;li&gt;Total Hours Billed: {!Loop_Subjects.Total_Hours_Billed__c}&lt;/li&gt;&lt;li&gt;Owner: {!Loop_Subjects.OwnerId}&lt;/li&gt;&lt;/ul&gt;</text>
+        <text>&lt;p&gt;Work Item &lt;a href=&quot;{!WorkItemUrlBySubject}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!Loop_Subjects.CaseNumber}&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Subject: {!Loop_Subjects.Subject}&lt;/li&gt;&lt;li&gt;Account: {!Loop_Subjects.Account.Name}&lt;/li&gt;&lt;li&gt;Status: {!Loop_Subjects.Status}&lt;/li&gt;&lt;li&gt;Priority: {!Loop_Subjects.Priority}&lt;/li&gt;&lt;li&gt;Due: {!Loop_Subjects.Due_Date__c}&lt;/li&gt;&lt;li&gt;Due Status: {!Loop_Subjects.Due_Status_Code__c}&lt;/li&gt;&lt;li&gt;Total Hours Billed: {!Loop_Subjects.Total_Hours_Billed__c}&lt;/li&gt;&lt;li&gt;Owner: {!Loop_Subjects.OwnerId}&lt;/li&gt;&lt;/ul&gt;</text>
     </textTemplates>
     <variables>
         <name>col_subject</name>

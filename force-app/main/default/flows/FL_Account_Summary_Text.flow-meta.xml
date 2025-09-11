@@ -67,6 +67,16 @@
         </rules>
     </decisions>
     <environments>Default</environments>
+    <formulas>
+        <name>AccountUrl</name>
+        <dataType>String</dataType>
+        <expression>{!InstanceBaseUrl} &amp; &quot;/lightning/r/Account/&quot; &amp; {!Get_Account.Id} &amp; &quot;/view&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>InstanceBaseUrl</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_620}, FIND(&quot;/services&quot;, {!$Api.Partner_Server_URL_620}) - 1)</expression>
+    </formulas>
     <interviewLabel>FL Account Summary Text {!$Flow.CurrentDateTime}</interviewLabel>
     <label>FL Account Summary Text</label>
     <processMetadataValues>
@@ -130,7 +140,7 @@
     <textTemplates>
         <name>tt_Summary</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;{!Get_Account.Name}&lt;/p&gt;&lt;p&gt;• Website: {!Get_Account.Website}&lt;/p&gt;&lt;p&gt;• Phone: {!Get_Account.Phone}&lt;/p&gt;&lt;p&gt;• Owner: {!Get_Account.Owner.Name}&lt;/p&gt;&lt;p&gt;• Industry: {!Get_Account.Industry}&lt;/p&gt;&lt;p&gt;• Employees: {!Get_Account.NumberOfEmployees}&lt;/p&gt;&lt;p&gt;• SLA Expiration: {!Get_Account.SLAExpirationDate__c}&lt;/p&gt;</text>
+        <text>&lt;p&gt;- &lt;a href=&quot;{!AccountUrl}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!Get_Account.Name}&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Website: {!Get_Account.Website}&lt;/li&gt;&lt;li&gt;Phone: {!Get_Account.Phone}&lt;/li&gt;&lt;li&gt;Owner: {!Get_Account.Owner.Name}&lt;/li&gt;&lt;li&gt;Industry: {!Get_Account.Industry}&lt;/li&gt;&lt;li&gt;Employees: {!Get_Account.NumberOfEmployees}&lt;/li&gt;&lt;li&gt;SLA Expiration: {!Get_Account.SLAExpirationDate__c}&lt;/li&gt;&lt;/ul&gt;</text>
     </textTemplates>
     <variables>
         <name>accountName</name>

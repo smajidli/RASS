@@ -281,6 +281,16 @@
         </rules>
     </decisions>
     <environments>Default</environments>
+    <formulas>
+        <name>InstanceBaseUrl</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_620}, FIND(&quot;/services&quot;, {!$Api.Partner_Server_URL_620}) - 1)</expression>
+    </formulas>
+    <formulas>
+        <name>WorkItemUrl</name>
+        <dataType>String</dataType>
+        <expression>{!InstanceBaseUrl} &amp; &quot;/lightning/r/Case/&quot; &amp; {!LoopMine.Id} &amp; &quot;/view&quot;</expression>
+    </formulas>
     <interviewLabel>FL My Open WorkItems Text {!$Flow.CurrentDateTime}</interviewLabel>
     <label>FL My Open WorkItems Text</label>
     <loops>
@@ -384,7 +394,7 @@
     <textTemplates>
         <name>tt_Line</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;- {!LoopMine.CaseNumber}: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;{!LoopMine.Subject} &lt;/li&gt;&lt;li&gt;Priority: {!LoopMine.Priority} &lt;/li&gt;&lt;li&gt;Status: {!LoopMine.Status} &lt;/li&gt;&lt;li&gt;Opened: {!LoopMine.CreatedDate}&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+        <text>&lt;p&gt;- &lt;a href=&quot;{!WorkItemUrl}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!LoopMine.CaseNumber}&lt;/a&gt;:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Subject: {!LoopMine.Subject}&lt;/li&gt;&lt;li&gt;Priority: {!LoopMine.Priority}&lt;/li&gt;&lt;li&gt;Status: {!LoopMine.Status}&lt;/li&gt;&lt;li&gt;Due: {!LoopMine.Due_Date__c}&lt;/li&gt;&lt;/ul&gt;</text>
     </textTemplates>
     <variables>
         <name>count</name>

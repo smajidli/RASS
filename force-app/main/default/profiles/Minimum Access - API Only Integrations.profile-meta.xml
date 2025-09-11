@@ -161,11 +161,6 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.ProductInterest__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Lead.SICCode__c</field>
         <readable>false</readable>
@@ -212,6 +207,14 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Auto_Dates</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Auto_Dates_Nightly_Refresh</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Auto_Dates_Recompute_on_Due_Date_change</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>

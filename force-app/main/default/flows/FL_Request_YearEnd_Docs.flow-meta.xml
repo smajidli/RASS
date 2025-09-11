@@ -54,22 +54,6 @@
     </actionCalls>
     <apiVersion>64.0</apiVersion>
     <assignments>
-        <name>Append</name>
-        <label>Append</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignmentItems>
-            <assignToReference>message</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <stringValue>Contact was created on the account.</stringValue>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Done1</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
         <name>AssignEmailRecipient</name>
         <label>AssignEmailRecipient</label>
         <locationX>0</locationX>
@@ -97,47 +81,6 @@
                 <elementReference>tt_Summary</elementReference>
             </value>
         </assignmentItems>
-        <connector>
-            <targetReference>WasContactCreated</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Copy_1_of_SetEmail1</name>
-        <label>Copy 1 of SetEmail1</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignmentItems>
-            <assignToReference>toEmail</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>ContactByName2.Email</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>toEmailBlank</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>CreatedContact1</name>
-        <label>CreatedContact</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignmentItems>
-            <assignToReference>createdContact</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>SendEmail</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Done1</name>
-        <label>Done</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
         <assignmentItems>
             <assignToReference>done</assignToReference>
             <operator>Assign</operator>
@@ -165,9 +108,6 @@
                 <booleanValue>true</booleanValue>
             </value>
         </assignmentItems>
-        <connector>
-            <targetReference>ShouldCreateContact</targetReference>
-        </connector>
     </assignments>
     <assignments>
         <name>SetEmail1</name>
@@ -217,31 +157,26 @@
             <targetReference>StillNoRecipient</targetReference>
         </connector>
     </assignments>
-    <decisions>
-        <name>AccountExists</name>
-        <label>AccountExists?</label>
+    <assignments>
+        <name>WrongStage</name>
+        <label>WrongStage</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
-        <defaultConnector>
-            <targetReference>ContactByName2</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Yes4</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>GetAccById</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>ContactByName</targetReference>
-            </connector>
-            <label>Yes</label>
-        </rules>
-    </decisions>
+        <assignmentItems>
+            <assignToReference>message</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tt_WrongStage</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>done</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
     <decisions>
         <name>contactEmailBlank</name>
         <label>contactEmailBlank?</label>
@@ -337,7 +272,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>AccountExists</targetReference>
+                <targetReference>ContactByName</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
@@ -368,54 +303,26 @@
         </rules>
     </decisions>
     <decisions>
-        <name>ShouldCreateContact</name>
-        <label>ShouldCreateContact?</label>
+        <name>RightStage</name>
+        <label>RightStage?</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <defaultConnector>
-            <targetReference>SendEmail</targetReference>
+            <targetReference>WrongStage</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>Yes7</name>
+            <name>Yes1</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>createContact</leftValueReference>
+                <leftValueReference>ByNumber.Status</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>ContactByName</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>ContactByName2</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>GetContactById</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>GetAccById</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
+                    <stringValue>Requesting Documents</stringValue>
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>NewContact</targetReference>
+                <targetReference>HasAccount</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
@@ -426,17 +333,17 @@
         <locationX>0</locationX>
         <locationY>0</locationY>
         <defaultConnector>
-            <targetReference>ShouldCreateContact</targetReference>
+            <targetReference>SendEmail</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Yes6</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>message</leftValueReference>
-                <operator>EqualTo</operator>
+                <leftValueReference>toEmail</leftValueReference>
+                <operator>IsBlank</operator>
                 <rightValue>
-                    <elementReference>tt_NoRecipient</elementReference>
+                    <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -470,32 +377,22 @@
             <label>Yes</label>
         </rules>
     </decisions>
-    <decisions>
-        <name>WasContactCreated</name>
-        <label>WasContactCreated?</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <defaultConnector>
-            <targetReference>Done1</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Yes8</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>createdContact</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Append</targetReference>
-            </connector>
-            <label>Yes</label>
-        </rules>
-    </decisions>
     <environments>Default</environments>
+    <formulas>
+        <name>AccountUrl</name>
+        <dataType>String</dataType>
+        <expression>{!InstanceBaseUrl} &amp; &quot;/lightning/r/Account/&quot; &amp; {!GetAccById.Id} &amp; &quot;/view&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>InstanceBaseUrl</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_620}, FIND(&quot;/services&quot;, {!$Api.Partner_Server_URL_620}) - 1)</expression>
+    </formulas>
+    <formulas>
+        <name>WorkItemUrl</name>
+        <dataType>String</dataType>
+        <expression>{!InstanceBaseUrl} &amp; &quot;/lightning/r/Case/&quot; &amp; {!ByNumber.Id} &amp; &quot;/view&quot;</expression>
+    </formulas>
     <interviewLabel>FL Request YearEnd Docs {!$Flow.CurrentDateTime}</interviewLabel>
     <label>FL Request YearEnd Docs</label>
     <processMetadataValues>
@@ -517,29 +414,6 @@
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
-    <recordCreates>
-        <name>NewContact</name>
-        <label>NewContact</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <connector>
-            <targetReference>CreatedContact1</targetReference>
-        </connector>
-        <inputAssignments>
-            <field>AccountId</field>
-            <value>
-                <elementReference>GetAccById.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Email</field>
-            <value>
-                <elementReference>toEmail</elementReference>
-            </value>
-        </inputAssignments>
-        <object>Contact</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordCreates>
     <recordLookups>
         <name>ByNumber</name>
         <label>ByNumber</label>
@@ -547,7 +421,7 @@
         <locationY>0</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>HasAccount</targetReference>
+            <targetReference>RightStage</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -569,34 +443,6 @@
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>SetEmail1</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>AccountId</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>GetAccById.Id</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>Name</field>
-            <operator>Contains</operator>
-            <value>
-                <elementReference>contactName</elementReference>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>Contact</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
-        <name>ContactByName2</name>
-        <label>ContactByName2</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Copy_1_of_SetEmail1</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -664,7 +510,7 @@
     <textTemplates>
         <name>tt_Body</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Hello,&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please send the requested year-end documents for Work Item {!ByNumber.CaseNumber}: {!ByNumber.Subject}.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;{!messageBody}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Thank you.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+        <text>&lt;p&gt;Hello,&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please provide your year end documents.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;For the following:&lt;/p&gt;&lt;p&gt;Company: &lt;a href=&quot;{!AccountUrl}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!GetAccById.Name}&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Work Item Number: &lt;a href=&quot;{!WorkItemUrl}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!ByNumber.CaseNumber}&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Case Subject: {!ByNumber.Subject}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Thank you.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;RASS Group Client Support&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
         <name>tt_NoRecipient</name>
@@ -686,16 +532,14 @@
         <isViewedAsPlainText>false</isViewedAsPlainText>
         <text>&lt;p&gt;Year-end documents request sent for {!ByNumber.CaseNumber} to {!toEmail}.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
     </textTemplates>
+    <textTemplates>
+        <name>tt_WrongStage</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Request Year End Documents is only available when Status is “Requesting Documents”. Current Status: {!ByNumber.Status}&lt;/p&gt;</text>
+    </textTemplates>
     <variables>
         <name>contactName</name>
         <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>true</isInput>
-        <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>createContact</name>
-        <dataType>Boolean</dataType>
         <isCollection>false</isCollection>
         <isInput>true</isInput>
         <isOutput>false</isOutput>

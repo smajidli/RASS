@@ -902,6 +902,11 @@
         <expression>TRIM({!recordKey})</expression>
     </formulas>
     <formulas>
+        <name>InstanceBaseUrl</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_620}, FIND(&quot;/services&quot;, {!$Api.Partner_Server_URL_620}) - 1)</expression>
+    </formulas>
+    <formulas>
         <name>LoggedLabel</name>
         <dataType>String</dataType>
         <expression>IF(
@@ -913,6 +918,11 @@
      IF(ROUND({!hoursLoggedDelta},0)=1,&quot;&quot;,&quot;s&quot;)
   )
 )</expression>
+    </formulas>
+    <formulas>
+        <name>WorkItemUrl</name>
+        <dataType>String</dataType>
+        <expression>{!InstanceBaseUrl} &amp; &quot;/lightning/r/Case/&quot; &amp; {!GetByNumber.Id} &amp; &quot;/view&quot;</expression>
     </formulas>
     <interviewLabel>FL Update WorkItem {!$Flow.CurrentDateTime}</interviewLabel>
     <label>FL Update WorkItem</label>
@@ -1091,7 +1101,7 @@
     <textTemplates>
         <name>tt_Header</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Update Work Item — {!GetByNumber.CaseNumber}&lt;/p&gt;</text>
+        <text>&lt;p&gt;Update Work Item — &lt;a href=&quot;{!WorkItemUrl}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!GetByNumber.CaseNumber}&lt;/a&gt;&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
         <name>tt_NoChange</name>

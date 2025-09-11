@@ -24,15 +24,31 @@
             </value>
         </inputParameters>
         <inputParameters>
-            <name>processDefinitionNameOrId</name>
+            <name>nextApproverIds</name>
             <value>
-                <elementReference>processName</elementReference>
+                <elementReference>nextApproverIds</elementReference>
             </value>
         </inputParameters>
         <nameSegment>submit</nameSegment>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </actionCalls>
     <apiVersion>64.0</apiVersion>
+    <assignments>
+        <name>AddToList</name>
+        <label>AddToList</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>nextApproverIds</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>GetApproverById.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>GetByNumber</targetReference>
+        </connector>
+    </assignments>
     <assignments>
         <name>AlreadyPending1</name>
         <label>AlreadyPending</label>
@@ -63,6 +79,26 @@
             <operator>Assign</operator>
             <value>
                 <stringValue>Work Item Number is required.</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>done</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>NotGiven</name>
+        <label>NotGiven</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>message</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Please specify an approver.</stringValue>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -139,12 +175,37 @@
         </rules>
     </decisions>
     <decisions>
+        <name>ApproverIdGiven</name>
+        <label>ApproverIdGiven?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>GetApproverById</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>No1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>approverId</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>NotGiven</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>HaveKey</name>
         <label>HaveKey?</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <defaultConnector>
-            <targetReference>GetByNumber</targetReference>
+            <targetReference>ApproverIdGiven</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -189,6 +250,16 @@
         </rules>
     </decisions>
     <environments>Default</environments>
+    <formulas>
+        <name>InstanceBaseUrl</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_620}, FIND(&quot;/services&quot;, {!$Api.Partner_Server_URL_620}) - 1)</expression>
+    </formulas>
+    <formulas>
+        <name>WorkItemUrl</name>
+        <dataType>String</dataType>
+        <expression>{!InstanceBaseUrl} &amp; &quot;/lightning/r/Case/&quot; &amp; {!GetByNumber.Id} &amp; &quot;/view&quot;</expression>
+    </formulas>
     <interviewLabel>FL Submit WorkItem For Approval {!$Flow.CurrentDateTime}</interviewLabel>
     <label>FL Submit WorkItem For Approval</label>
     <processMetadataValues>
@@ -239,6 +310,27 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
+        <name>GetApproverById</name>
+        <label>GetApproverById</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>AddToList</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>Contains</operator>
+            <value>
+                <elementReference>approverId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
         <name>GetByNumber</name>
         <label>GetByNumber</label>
         <locationX>0</locationX>
@@ -281,13 +373,20 @@
     <textTemplates>
         <name>tt_Success</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Submitted {!GetByNumber.CaseNumber} for approval. Comments: {!comments}&lt;/p&gt;</text>
+        <text>&lt;p&gt;Submitted &lt;a href=&quot;{!WorkItemUrl}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!GetByNumber.CaseNumber}&lt;/a&gt; for approval. Comments: {!comments}&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
         <name>tt_WrongStage</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
         <text>&lt;p&gt;Submit for Approval is only available when Status is “Reviewing File”. Current Status: {!GetByNumber.Status}.&lt;/p&gt;</text>
     </textTemplates>
+    <variables>
+        <name>approverId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
     <variables>
         <name>comments</name>
         <dataType>String</dataType>
@@ -313,10 +412,10 @@
         <isOutput>true</isOutput>
     </variables>
     <variables>
-        <name>processName</name>
+        <name>nextApproverIds</name>
         <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>true</isInput>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
         <isOutput>false</isOutput>
     </variables>
     <variables>

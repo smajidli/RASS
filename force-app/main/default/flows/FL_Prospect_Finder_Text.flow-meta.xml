@@ -474,6 +474,31 @@
         </rules>
     </decisions>
     <environments>Default</environments>
+    <formulas>
+        <name>InstanceBaseUrl</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_620}, FIND(&quot;/services&quot;, {!$Api.Partner_Server_URL_620}) - 1)</expression>
+    </formulas>
+    <formulas>
+        <name>ProspectUrl1</name>
+        <dataType>String</dataType>
+        <expression>{!InstanceBaseUrl} &amp; &quot;/lightning/r/Lead/&quot; &amp; {!Copy_1_of_Loop_Prospects.Id} &amp; &quot;/view&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>ProspectUrl2</name>
+        <dataType>String</dataType>
+        <expression>{!InstanceBaseUrl} &amp; &quot;/lightning/r/Lead/&quot; &amp; {!Copy_2_of_Loop_Prospects.Id} &amp; &quot;/view&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>ProspectUrl3</name>
+        <dataType>String</dataType>
+        <expression>{!InstanceBaseUrl} &amp; &quot;/lightning/r/Lead/&quot; &amp; {!Copy_3_of_Loop_Prospects.Id} &amp; &quot;/view&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>ProspectUrl4</name>
+        <dataType>String</dataType>
+        <expression>{!InstanceBaseUrl} &amp; &quot;/lightning/r/Lead/&quot; &amp; {!Copy_4_of_Loop_Prospects.Id} &amp; &quot;/view&quot;</expression>
+    </formulas>
     <interviewLabel>FL Prospect Finder Text {!$Flow.CurrentDateTime}</interviewLabel>
     <label>FL Prospect Finder Text</label>
     <loops>
@@ -659,22 +684,22 @@
     <textTemplates>
         <name>tt_Line1</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;{!Copy_1_of_Loop_Prospects.Name}&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Industry: {!Copy_1_of_Loop_Prospects.Industry}&lt;/li&gt;&lt;li&gt;Status: {!Copy_1_of_Loop_Prospects.Status}&lt;/li&gt;&lt;li&gt;Owner: {!Copy_1_of_Loop_Prospects.Owner:User.Name}&lt;/li&gt;&lt;li&gt;Employees: {!Copy_1_of_Loop_Prospects.NumberOfEmployees}&lt;/li&gt;&lt;/ul&gt;</text>
+        <text>&lt;p&gt;- &lt;a href=&quot;{!ProspectUrl1}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!Copy_1_of_Loop_Prospects.Name}&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Industry: {!Copy_1_of_Loop_Prospects.Industry}&lt;/li&gt;&lt;li&gt;Status: {!Copy_1_of_Loop_Prospects.Status}&lt;/li&gt;&lt;li&gt;Owner: {!Copy_1_of_Loop_Prospects.Owner:User.Name}&lt;/li&gt;&lt;li&gt;Employees: {!Copy_1_of_Loop_Prospects.NumberOfEmployees}&lt;/li&gt;&lt;/ul&gt;</text>
     </textTemplates>
     <textTemplates>
         <name>tt_Line2</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;{!Copy_2_of_Loop_Prospects.Name}&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Industry: {!Copy_2_of_Loop_Prospects.Industry}&lt;/li&gt;&lt;li&gt;Status: {!Copy_2_of_Loop_Prospects.Status}&lt;/li&gt;&lt;li&gt;Owner: {!Copy_2_of_Loop_Prospects.Owner:User.Name}&lt;/li&gt;&lt;li&gt;Employees: {!Copy_2_of_Loop_Prospects.NumberOfEmployees}&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+        <text>&lt;p&gt;- &lt;a href=&quot;{!ProspectUrl2}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!Copy_2_of_Loop_Prospects.Name}&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Industry: {!Copy_2_of_Loop_Prospects.Industry}&lt;/li&gt;&lt;li&gt;Status: {!Copy_2_of_Loop_Prospects.Status}&lt;/li&gt;&lt;li&gt;Owner: {!Copy_2_of_Loop_Prospects.Owner:User.Name}&lt;/li&gt;&lt;li&gt;Employees: {!Copy_2_of_Loop_Prospects.NumberOfEmployees}&lt;/li&gt;&lt;/ul&gt;</text>
     </textTemplates>
     <textTemplates>
         <name>tt_Line3</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;{!Copy_3_of_Loop_Prospects.Name}&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Industry: {!Copy_3_of_Loop_Prospects.Industry}&lt;/li&gt;&lt;li&gt;Status: {!Copy_3_of_Loop_Prospects.Status}&lt;/li&gt;&lt;li&gt;Owner: {!Copy_3_of_Loop_Prospects.Owner:User.Name}&lt;/li&gt;&lt;li&gt;Employees: {!Copy_3_of_Loop_Prospects.NumberOfEmployees}&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+        <text>&lt;p&gt;- &lt;a href=&quot;{!ProspectUrl3}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!Copy_3_of_Loop_Prospects.Name}&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Industry: {!Copy_3_of_Loop_Prospects.Industry}&lt;/li&gt;&lt;li&gt;Status: {!Copy_3_of_Loop_Prospects.Status}&lt;/li&gt;&lt;li&gt;Owner: {!Copy_3_of_Loop_Prospects.Owner:User.Name}&lt;/li&gt;&lt;li&gt;Employees: {!Copy_3_of_Loop_Prospects.NumberOfEmployees}&lt;/li&gt;&lt;/ul&gt;</text>
     </textTemplates>
     <textTemplates>
         <name>tt_Line4</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;{!Copy_4_of_Loop_Prospects.Name}&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Industry: {!Copy_4_of_Loop_Prospects.Industry}&lt;/li&gt;&lt;li&gt;Status: {!Copy_4_of_Loop_Prospects.Status}&lt;/li&gt;&lt;li&gt;Owner: {!Copy_4_of_Loop_Prospects.Owner:User.Name}&lt;/li&gt;&lt;li&gt;Employees: {!Copy_4_of_Loop_Prospects.NumberOfEmployees}&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+        <text>&lt;p&gt;- &lt;a href=&quot;{!ProspectUrl4}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!Copy_4_of_Loop_Prospects.Name}&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Industry: {!Copy_4_of_Loop_Prospects.Industry}&lt;/li&gt;&lt;li&gt;Status: {!Copy_4_of_Loop_Prospects.Status}&lt;/li&gt;&lt;li&gt;Owner: {!Copy_4_of_Loop_Prospects.Owner:User.Name}&lt;/li&gt;&lt;li&gt;Employees: {!Copy_4_of_Loop_Prospects.NumberOfEmployees}&lt;/li&gt;&lt;/ul&gt;</text>
     </textTemplates>
     <variables>
         <name>count</name>

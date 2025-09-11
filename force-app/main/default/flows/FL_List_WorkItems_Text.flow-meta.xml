@@ -557,9 +557,19 @@
         <expression>TODAY() + {!days}</expression>
     </formulas>
     <formulas>
+        <name>InstanceBaseUrl</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_620}, FIND(&quot;/services&quot;, {!$Api.Partner_Server_URL_620}) - 1)</expression>
+    </formulas>
+    <formulas>
         <name>TodaysDate</name>
         <dataType>Date</dataType>
         <expression>TODAY()</expression>
+    </formulas>
+    <formulas>
+        <name>WorkItemUrl</name>
+        <dataType>String</dataType>
+        <expression>{!InstanceBaseUrl} &amp; &quot;/lightning/r/Case/&quot; &amp; {!LoopWI.Id} &amp; &quot;/view&quot;</expression>
     </formulas>
     <interviewLabel>FL List WorkItems Text {!$Flow.CurrentDateTime}</interviewLabel>
     <label>FL List WorkItems Text</label>
@@ -659,7 +669,7 @@
     <textTemplates>
         <name>tt_Line</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;&lt;strong&gt;{!LoopWI.CaseNumber}:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Subject: {!LoopWI.Subject}&lt;/li&gt;&lt;li&gt;Priority: {!LoopWI.Priority}&lt;/li&gt;&lt;li&gt;Status: {!LoopWI.Status}&lt;/li&gt;&lt;li&gt;Due: {!LoopWI.Due_Date__c}&amp;nbsp;&lt;/li&gt;&lt;li&gt;Hours Billed: {!LoopWI.Total_Hours_Billed__c}&lt;/li&gt;&lt;li&gt;Hours Logged: {!LoopWI.Total_Hours_Logged__c}&lt;/li&gt;&lt;li&gt;Account: {!LoopWI.Account.Name}&lt;/li&gt;&lt;/ul&gt;</text>
+        <text>&lt;p&gt;- &lt;a href=&quot;{!WorkItemUrl}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!LoopWI.CaseNumber}&lt;/a&gt;:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Subject: {!LoopWI.Subject}&lt;/li&gt;&lt;li&gt;Priority: {!LoopWI.Priority}&lt;/li&gt;&lt;li&gt;Status: {!LoopWI.Status}&lt;/li&gt;&lt;li&gt;Due: {!LoopWI.Due_Date__c}&amp;nbsp;&lt;/li&gt;&lt;li&gt;Hours Billed: {!LoopWI.Total_Hours_Billed__c}&lt;/li&gt;&lt;li&gt;Hours Logged: {!LoopWI.Total_Hours_Logged__c}&lt;/li&gt;&lt;li&gt;Account: {!LoopWI.Account.Name}&lt;/li&gt;&lt;/ul&gt;</text>
     </textTemplates>
     <variables>
         <name>account</name>
