@@ -242,6 +242,14 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>FL_Create_Account</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>FL_Create_Work_Item</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>FL_List_Accounts_Text</flow>
     </flowAccesses>
     <flowAccesses>
@@ -271,6 +279,14 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>FL_Submit_WorkItem_For_Approval</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>FL_Update_Account</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>FL_Update_Prospect</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
