@@ -25,38 +25,6 @@
         </connector>
     </assignments>
     <assignments>
-        <name>ChooseOwner</name>
-        <label>ChooseOwner</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignmentItems>
-            <assignToReference>effectiveOwnerId</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>ownerId</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>GetMine</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>DefaultId</name>
-        <label>DefaultId</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignmentItems>
-            <assignToReference>effectiveOwnerId</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$User.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>GetMine</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
         <name>FilterRecords</name>
         <label>FilterRecords</label>
         <locationX>0</locationX>
@@ -66,6 +34,22 @@
             <operator>RemoveUncommon</operator>
             <value>
                 <elementReference>FilterByStatus</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>FilterDueDate</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>FilterRecords2</name>
+        <label>FilterRecords2</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>GetMine</assignToReference>
+            <operator>RemoveUncommon</operator>
+            <value>
+                <elementReference>FilterByDueDate</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -92,7 +76,7 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>GetUserByEmail</targetReference>
+            <targetReference>GetMine</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -128,22 +112,48 @@
             </value>
         </assignmentItems>
     </assignments>
-    <assignments>
-        <name>SetUserByEmail</name>
-        <label>SetUserByEmail</label>
+    <collectionProcessors>
+        <name>FilterByDueDate</name>
+        <elementSubtype>FilterCollectionProcessor</elementSubtype>
+        <label>FilterByDueDate</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
-        <assignmentItems>
-            <assignToReference>effectiveOwnerId</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>GetUserByEmail.Id</elementReference>
-            </value>
-        </assignmentItems>
+        <assignNextValueToReference>currentItem_FilterByDueDate</assignNextValueToReference>
+        <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
+        <collectionReference>GetMine</collectionReference>
+        <conditionLogic>(1 OR 2) AND (3 AND 4)</conditionLogic>
+        <conditions>
+            <leftValueReference>currentItem_FilterByDueDate.Due_Date__c</leftValueReference>
+            <operator>LessThanOrEqualTo</operator>
+            <rightValue>
+                <elementReference>dueDate</elementReference>
+            </rightValue>
+        </conditions>
+        <conditions>
+            <leftValueReference>currentItem_FilterByDueDate.Due_Date__c</leftValueReference>
+            <operator>LessThanOrEqualTo</operator>
+            <rightValue>
+                <elementReference>cutoffDate</elementReference>
+            </rightValue>
+        </conditions>
+        <conditions>
+            <leftValueReference>currentItem_FilterByDueDate.Due_Date__c</leftValueReference>
+            <operator>IsNull</operator>
+            <rightValue>
+                <booleanValue>false</booleanValue>
+            </rightValue>
+        </conditions>
+        <conditions>
+            <leftValueReference>currentItem_FilterByDueDate.Due_Date__c</leftValueReference>
+            <operator>GreaterThanOrEqualTo</operator>
+            <rightValue>
+                <elementReference>todaysDate</elementReference>
+            </rightValue>
+        </conditions>
         <connector>
-            <targetReference>GetMine</targetReference>
+            <targetReference>FilterRecords2</targetReference>
         </connector>
-    </assignments>
+    </collectionProcessors>
     <collectionProcessors>
         <name>FilterByStatus</name>
         <elementSubtype>FilterCollectionProcessor</elementSubtype>
@@ -216,12 +226,44 @@
         </rules>
     </decisions>
     <decisions>
+        <name>FilterDueDate</name>
+        <label>FilterDueDate</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>LoopMine</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes1</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>dueDate</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>days</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>FilterByDueDate</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>FilterStatus</name>
         <label>FilterStatus</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <defaultConnector>
-            <targetReference>LoopMine</targetReference>
+            <targetReference>FilterDueDate</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -240,51 +282,21 @@
             <label>HasStatus</label>
         </rules>
     </decisions>
-    <decisions>
-        <name>OwnerIdBlank</name>
-        <label>OwnerIdBlank?</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <defaultConnector>
-            <targetReference>DefaultId</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>No</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>ownerId</leftValueReference>
-                <operator>IsBlank</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>ChooseOwner</targetReference>
-            </connector>
-            <label>No</label>
-        </rules>
-        <rules>
-            <name>ByEmail</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>GetUserByEmail</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>SetUserByEmail</targetReference>
-            </connector>
-            <label>ByEmail</label>
-        </rules>
-    </decisions>
     <environments>Default</environments>
+    <formulas>
+        <name>cutoffDate</name>
+        <dataType>Date</dataType>
+        <expression>TODAY() + {!days}</expression>
+    </formulas>
     <formulas>
         <name>InstanceBaseUrl</name>
         <dataType>String</dataType>
         <expression>LEFT({!$Api.Partner_Server_URL_620}, FIND(&quot;/services&quot;, {!$Api.Partner_Server_URL_620}) - 1)</expression>
+    </formulas>
+    <formulas>
+        <name>todaysDate</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
     </formulas>
     <formulas>
         <name>WorkItemUrl</name>
@@ -340,41 +352,20 @@
             <field>OwnerId</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>effectiveOwnerId</elementReference>
+                <elementReference>$User.Id</elementReference>
             </value>
         </filters>
         <filters>
             <field>Status</field>
             <operator>NotEqualTo</operator>
             <value>
-                <stringValue>Return_Filed</stringValue>
+                <stringValue>Return Filed</stringValue>
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
         <object>Case</object>
         <sortField>LastModifiedDate</sortField>
         <sortOrder>Desc</sortOrder>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
-        <name>GetUserByEmail</name>
-        <label>GetUserByEmail</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>OwnerIdBlank</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Email</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>ownerEmail</elementReference>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>User</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <runInMode>SystemModeWithoutSharing</runInMode>
@@ -408,12 +399,28 @@
         </value>
     </variables>
     <variables>
+        <name>currentItem_FilterByDueDate</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+    <variables>
         <name>currentItem_FilterByStatus</name>
         <dataType>SObject</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>
         <objectType>Case</objectType>
+    </variables>
+    <variables>
+        <name>days</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
     </variables>
     <variables>
         <name>done</name>
@@ -426,10 +433,10 @@
         </value>
     </variables>
     <variables>
-        <name>effectiveOwnerId</name>
-        <dataType>String</dataType>
+        <name>dueDate</name>
+        <dataType>Date</dataType>
         <isCollection>false</isCollection>
-        <isInput>false</isInput>
+        <isInput>true</isInput>
         <isOutput>false</isOutput>
     </variables>
     <variables>
@@ -449,20 +456,6 @@
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>true</isOutput>
-    </variables>
-    <variables>
-        <name>ownerEmail</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>true</isInput>
-        <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>ownerId</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>true</isInput>
-        <isOutput>false</isOutput>
     </variables>
     <variables>
         <name>status</name>

@@ -755,6 +755,21 @@
         </rules>
     </decisions>
     <environments>Default</environments>
+    <formulas>
+        <name>AccountUrl</name>
+        <dataType>String</dataType>
+        <expression>{!InstanceBaseUrl} &amp; &quot;/lightning/r/Account/&quot; &amp; {!accFound.Id} &amp; &quot;/view&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>AccountUrlLoop</name>
+        <dataType>String</dataType>
+        <expression>{!InstanceBaseUrl} &amp; &quot;/lightning/r/Account/&quot; &amp; {!Loop_Accounts.Id} &amp; &quot;/view&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>InstanceBaseUrl</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_620}, FIND(&quot;/services&quot;, {!$Api.Partner_Server_URL_620}) - 1)</expression>
+    </formulas>
     <interviewLabel>FL Update Account {!$Flow.CurrentDateTime}</interviewLabel>
     <label>FL Update Account</label>
     <loops>
@@ -879,12 +894,12 @@
     <textTemplates>
         <name>tt_AppendManyByName</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;- {!Loop_Accounts.Name}: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;{!Loop_Accounts.AccountNumber}&lt;/li&gt;&lt;/ul&gt;</text>
+        <text>&lt;p&gt;- &lt;a href=&quot;{!AccountUrlLoop}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!Loop_Accounts.Name}&lt;/a&gt;:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;{!Loop_Accounts.AccountNumber}&lt;/li&gt;&lt;/ul&gt;</text>
     </textTemplates>
     <textTemplates>
         <name>tt_ChangesMade</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Updated Account {!accFound.Name}.&lt;/p&gt;</text>
+        <text>&lt;p&gt;Updated Account &lt;a href=&quot;{!AccountUrl}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!accFound.Name}&lt;/a&gt;.&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
         <name>tt_ManyByName</name>

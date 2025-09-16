@@ -37,13 +37,6 @@
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference>message</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>tt_Footer</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
             <assignToReference>done</assignToReference>
             <operator>Assign</operator>
             <value>
@@ -52,132 +45,19 @@
         </assignmentItems>
     </assignments>
     <assignments>
-        <name>Copy_1_of_StageBilled</name>
-        <label>Copy 1 of StageBilled</label>
+        <name>Copy_1_of_Set_WorkItem_Found</name>
+        <label>Copy 1 of Set WorkItem Found</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <assignmentItems>
-            <assignToReference>newBilledTotal</assignToReference>
+            <assignToReference>workItemFound</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>f_ProposedBilled</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>safeBilled</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>f_ProposedBilled_NonNegative</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>hasBilledChange</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>GetByNumber.Total_Hours_Billed__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>safeBilled</elementReference>
+                <elementReference>GetByNumber</elementReference>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>GotById</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Copy_1_of_StageDueDate</name>
-        <label>Copy 1 of StageDueDate</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignmentItems>
-            <assignToReference>GetByNumber.Due_Date__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>newDueDate</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>changes</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <stringValue>Due Date: {!newDueDate}</stringValue>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>HasBilledSetOrDelta</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Copy_1_of_StagePriority</name>
-        <label>Copy 1 of StagePriority</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignmentItems>
-            <assignToReference>GetByNumber.Priority</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>newPriority</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>changes</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <stringValue>Priority: {!newPriority}</stringValue>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>HasSubject</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Copy_1_of_StageStatus</name>
-        <label>Copy 1 of StageStatus</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignmentItems>
-            <assignToReference>GetByNumber.Status</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>newStatus</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>changes</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <stringValue>Status: {!newStatus}</stringValue>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>HasPriority</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Copy_1_of_StageSubject</name>
-        <label>Copy 1 of StageSubject</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignmentItems>
-            <assignToReference>GetByNumber.Subject</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>newSubject</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>changes</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <stringValue>Subject: {!newSubject}</stringValue>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>HasDueDate</targetReference>
+            <targetReference>AnyFieldProvided</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -274,6 +154,22 @@
         </assignmentItems>
     </assignments>
     <assignments>
+        <name>Set_WorkItem_Found</name>
+        <label>Set WorkItem Found</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>workItemFound</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ById</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>AnyFieldProvided</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <name>StageBilled</name>
         <label>StageBilled</label>
         <locationX>0</locationX>
@@ -300,14 +196,14 @@
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference>ById.Total_Hours_Billed__c</assignToReference>
+            <assignToReference>workItemFound.Total_Hours_Billed__c</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>safeBilled</elementReference>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>GotById</targetReference>
+            <targetReference>SaveWorkItem</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -316,7 +212,7 @@
         <locationX>0</locationX>
         <locationY>0</locationY>
         <assignmentItems>
-            <assignToReference>ById.Due_Date__c</assignToReference>
+            <assignToReference>workItemFound.Due_Date__c</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>newDueDate</elementReference>
@@ -339,7 +235,7 @@
         <locationX>0</locationX>
         <locationY>0</locationY>
         <assignmentItems>
-            <assignToReference>ById.Priority</assignToReference>
+            <assignToReference>workItemFound.Priority</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>newPriority</elementReference>
@@ -362,7 +258,7 @@
         <locationX>0</locationX>
         <locationY>0</locationY>
         <assignmentItems>
-            <assignToReference>ById.Status</assignToReference>
+            <assignToReference>workItemFound.Status</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>newStatus</elementReference>
@@ -385,7 +281,7 @@
         <locationX>0</locationX>
         <locationY>0</locationY>
         <assignmentItems>
-            <assignToReference>ById.Subject</assignToReference>
+            <assignToReference>workItemFound.Subject</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>newSubject</elementReference>
@@ -428,162 +324,12 @@
         </rules>
     </decisions>
     <decisions>
-        <name>Copy_1_of_1</name>
-        <label>Copy 1 of 1</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <defaultConnector>
-            <targetReference>Copy_1_of_StagePriority</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Copy_1_of_Y</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Yes9</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>StagePriority</targetReference>
-            </connector>
-            <label>Copy 1 of Y</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Copy_1_of_GotById</name>
-        <label>Copy 1 of GotById?</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <defaultConnector>
-            <targetReference>Copy_1_of_NewTimeLog</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Copy_1_of_Yes</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Yes9</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>NewTimeLog</targetReference>
-            </connector>
-            <label>Copy 1 of Yes</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Copy_2_of_1</name>
-        <label>Copy 2 of 1</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <defaultConnector>
-            <targetReference>Copy_1_of_StageSubject</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Copy_2_of_Y</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Yes9</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>StageSubject</targetReference>
-            </connector>
-            <label>Copy 2 of Y</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Copy_3_of_1</name>
-        <label>Copy 3 of 1</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <defaultConnector>
-            <targetReference>Copy_1_of_StageDueDate</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Copy_3_of_Y</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Yes9</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>StageDueDate</targetReference>
-            </connector>
-            <label>Copy 3 of Y</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Copy_4_of_1</name>
-        <label>Copy 4 of 1</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <defaultConnector>
-            <targetReference>Copy_1_of_StageBilled</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Copy_4_of_Y</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Yes9</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>StageBilled</targetReference>
-            </connector>
-            <label>Copy 4 of Y</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>GotById</name>
-        <label>GotById?</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <defaultConnector>
-            <targetReference>Copy_1_of_SaveWorkItem</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Yes10</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Yes9</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>SaveWorkItem</targetReference>
-            </connector>
-            <label>Yes</label>
-        </rules>
-    </decisions>
-    <decisions>
         <name>HasBilledSetOrDelta</name>
         <label>HasBilledSetOrDelta?</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <defaultConnector>
-            <targetReference>GotById</targetReference>
+            <targetReference>SaveWorkItem</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -604,7 +350,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Copy_4_of_1</targetReference>
+                <targetReference>StageBilled</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
@@ -629,7 +375,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Copy_3_of_1</targetReference>
+                <targetReference>StageDueDate</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
@@ -654,7 +400,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Copy_1_of_GotById</targetReference>
+                <targetReference>NewTimeLog</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
@@ -679,7 +425,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Copy_1_of_1</targetReference>
+                <targetReference>StagePriority</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
@@ -704,7 +450,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>X1</targetReference>
+                <targetReference>StageStatus</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
@@ -729,7 +475,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Copy_2_of_1</targetReference>
+                <targetReference>StageSubject</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
@@ -807,31 +553,6 @@
                 <targetReference>ById</targetReference>
             </connector>
             <label>Yes</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>X1</name>
-        <label>1</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <defaultConnector>
-            <targetReference>Copy_1_of_StageStatus</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Y</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Yes9</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>StageStatus</targetReference>
-            </connector>
-            <label>Y</label>
         </rules>
     </decisions>
     <environments>Default</environments>
@@ -946,41 +667,6 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordCreates>
-        <name>Copy_1_of_NewTimeLog</name>
-        <label>Copy 1 of NewTimeLog</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <connector>
-            <targetReference>AppendLogged</targetReference>
-        </connector>
-        <inputAssignments>
-            <field>Activity__c</field>
-            <value>
-                <stringValue>Other</stringValue>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Comments__c</field>
-            <value>
-                <stringValue/>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Time__c</field>
-            <value>
-                <elementReference>LoggedLabel</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Work_Item__c</field>
-            <value>
-                <elementReference>GetByNumber.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <object>Time_Log__c</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordCreates>
-    <recordCreates>
         <name>NewTimeLog</name>
         <label>NewTimeLog</label>
         <locationX>0</locationX>
@@ -1009,7 +695,7 @@
         <inputAssignments>
             <field>Work_Item__c</field>
             <value>
-                <elementReference>ById.Id</elementReference>
+                <elementReference>workItemFound.Id</elementReference>
             </value>
         </inputAssignments>
         <object>Time_Log__c</object>
@@ -1022,7 +708,7 @@
         <locationY>0</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>AnyFieldProvided</targetReference>
+            <targetReference>Set_WorkItem_Found</targetReference>
         </connector>
         <filterLogic>or</filterLogic>
         <filters>
@@ -1045,7 +731,7 @@
         <locationY>0</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>AnyFieldProvided</targetReference>
+            <targetReference>Copy_1_of_Set_WorkItem_Found</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -1060,16 +746,6 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordUpdates>
-        <name>Copy_1_of_SaveWorkItem</name>
-        <label>Copy 1 of SaveWorkItem</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <connector>
-            <targetReference>HasLoggedDelta</targetReference>
-        </connector>
-        <inputReference>GetByNumber</inputReference>
-    </recordUpdates>
-    <recordUpdates>
         <name>SaveWorkItem</name>
         <label>SaveWorkItem</label>
         <locationX>0</locationX>
@@ -1077,7 +753,7 @@
         <connector>
             <targetReference>HasLoggedDelta</targetReference>
         </connector>
-        <inputReference>ById</inputReference>
+        <inputReference>workItemFound</inputReference>
     </recordUpdates>
     <runInMode>SystemModeWithoutSharing</runInMode>
     <start>
@@ -1096,12 +772,12 @@
     <textTemplates>
         <name>tt_Footer</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;-Subject: {!GetByNumber.Subject}&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Status: {!GetByNumber.Status}&lt;/li&gt;&lt;li&gt;Priority: {!GetByNumber.Priority}&lt;/li&gt;&lt;li&gt;Due: {!GetByNumber.Due_Date__c}&lt;/li&gt;&lt;li&gt;Due Code: {!GetByNumber.Due_Status_Code__c}&lt;/li&gt;&lt;li&gt;Total Hours Billed: {!GetByNumber.Total_Hours_Billed__c}&lt;/li&gt;&lt;/ul&gt;</text>
+        <text>&lt;p&gt;- Work Item {!workItemFound.CaseNumber}:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Status: {!workItemFound.Status}&lt;/li&gt;&lt;li&gt;Priority: {!workItemFound.Priority}&lt;/li&gt;&lt;li&gt;Due: {!workItemFound.Due_Date__c}&lt;/li&gt;&lt;li&gt;Due Code: {!workItemFound.Due_Status_Code__c}&lt;/li&gt;&lt;li&gt;Total Hours Billed: {!workItemFound.Total_Hours_Billed__c}&lt;/li&gt;&lt;/ul&gt;</text>
     </textTemplates>
     <textTemplates>
         <name>tt_Header</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Update Work Item — &lt;a href=&quot;{!WorkItemUrl}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!GetByNumber.CaseNumber}&lt;/a&gt;&lt;/p&gt;</text>
+        <text>&lt;p&gt;Updated Work Item — &lt;a href=&quot;{!WorkItemUrl}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!workItemFound.CaseNumber}&lt;/a&gt;&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
         <name>tt_NoChange</name>
@@ -1239,5 +915,13 @@
         <value>
             <numberValue>0.0</numberValue>
         </value>
+    </variables>
+    <variables>
+        <name>workItemFound</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Case</objectType>
     </variables>
 </Flow>

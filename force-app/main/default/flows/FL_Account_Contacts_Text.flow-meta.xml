@@ -254,6 +254,13 @@
                 <elementReference>accountName</elementReference>
             </value>
         </filters>
+        <filters>
+            <field>Name</field>
+            <operator>Contains</operator>
+            <value>
+                <elementReference>accountName</elementReference>
+            </value>
+        </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
         <object>Account</object>
         <sortField>Name</sortField>

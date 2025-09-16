@@ -2,15 +2,22 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>64.0</apiVersion>
     <assignments>
-        <name>CreatedCorpAcc</name>
-        <label>CreatedCorpAcc</label>
+        <name>Assign_Out</name>
+        <label>Assign Out</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>leadId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Create_Prospect</elementReference>
+            </value>
+        </assignmentItems>
         <assignmentItems>
             <assignToReference>message</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>tt_CreatedCorpAccount</elementReference>
+                <elementReference>tt_FinishedTextIndividual</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -22,15 +29,22 @@
         </assignmentItems>
     </assignments>
     <assignments>
-        <name>CreatedPersonAcc</name>
-        <label>CreatedPersonAcc</label>
+        <name>Copy_1_of_Assign_Out</name>
+        <label>Copy 1 of Assign Out</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>leadId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Copy_1_of_Create_Prospect</elementReference>
+            </value>
+        </assignmentItems>
         <assignmentItems>
             <assignToReference>message</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>tt_CreatedPersonAcc</elementReference>
+                <elementReference>tt_FinishedTextCorp</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -42,15 +56,15 @@
         </assignmentItems>
     </assignments>
     <assignments>
-        <name>LastNameRequired</name>
-        <label>LastNameRequired</label>
+        <name>NoType</name>
+        <label>NoType</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <assignmentItems>
             <assignToReference>message</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>tt_LastNameRequired</elementReference>
+                <elementReference>tt_NeedType</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -62,15 +76,15 @@
         </assignmentItems>
     </assignments>
     <assignments>
-        <name>NameRequired</name>
-        <label>NameRequired</label>
+        <name>Required</name>
+        <label>Required</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <assignmentItems>
             <assignToReference>message</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>tt_NameRequired</elementReference>
+                <elementReference>tt_ValidateRequired</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -82,15 +96,15 @@
         </assignmentItems>
     </assignments>
     <assignments>
-        <name>TypeRequired</name>
-        <label>TypeRequired</label>
+        <name>WrongType</name>
+        <label>WrongType</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <assignmentItems>
             <assignToReference>message</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>tt_TypeRequired</elementReference>
+                <elementReference>tt_WrongType</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -102,12 +116,37 @@
         </assignmentItems>
     </assignments>
     <decisions>
-        <name>HasLastName</name>
-        <label>HasLastName?</label>
+        <name>HaveType</name>
+        <label>HaveType?</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <defaultConnector>
-            <targetReference>LastNameRequired</targetReference>
+            <targetReference>Validate_Required</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>No</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>prospectType</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>NoType</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Validate_Required</name>
+        <label>Validate Required</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>WhichType</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -117,36 +156,18 @@
                 <leftValueReference>lastName</leftValueReference>
                 <operator>IsBlank</operator>
                 <rightValue>
-                    <booleanValue>false</booleanValue>
+                    <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
-            <connector>
-                <targetReference>CreatePersonAccount</targetReference>
-            </connector>
-            <label>Yes</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>HasName</name>
-        <label>HasName?</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <defaultConnector>
-            <targetReference>NameRequired</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Yes1</name>
-            <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>name</leftValueReference>
+                <leftValueReference>productInterest</leftValueReference>
                 <operator>IsBlank</operator>
                 <rightValue>
-                    <booleanValue>false</booleanValue>
+                    <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>CreateCorporateAccount</targetReference>
+                <targetReference>Required</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
@@ -157,58 +178,58 @@
         <locationX>0</locationX>
         <locationY>0</locationY>
         <defaultConnector>
-            <targetReference>TypeRequired</targetReference>
+            <targetReference>WrongType</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>Person</name>
+            <name>Individual</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>accountType</leftValueReference>
+                <leftValueReference>prospectType</leftValueReference>
                 <operator>Contains</operator>
                 <rightValue>
-                    <stringValue>person</stringValue>
+                    <stringValue>individual</stringValue>
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>HasLastName</targetReference>
+                <targetReference>Create_Prospect</targetReference>
             </connector>
-            <label>Person</label>
+            <label>Individual</label>
         </rules>
         <rules>
             <name>Corporate</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>accountType</leftValueReference>
+                <leftValueReference>prospectType</leftValueReference>
                 <operator>Contains</operator>
                 <rightValue>
                     <stringValue>corporate</stringValue>
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>HasName</targetReference>
+                <targetReference>Copy_1_of_Create_Prospect</targetReference>
             </connector>
             <label>Corporate</label>
         </rules>
     </decisions>
     <environments>Default</environments>
     <formulas>
-        <name>AccountUrlCorp</name>
-        <dataType>String</dataType>
-        <expression>{!InstanceBaseUrl} &amp; &quot;/lightning/r/Account/&quot; &amp; {!CreateCorporateAccount} &amp; &quot;/view&quot;</expression>
-    </formulas>
-    <formulas>
-        <name>AccountUrlPersonal</name>
-        <dataType>String</dataType>
-        <expression>{!InstanceBaseUrl} &amp; &quot;/lightning/r/Account/&quot; &amp; {!CreatePersonAccount} &amp; &quot;/view&quot;</expression>
-    </formulas>
-    <formulas>
         <name>InstanceBaseUrl</name>
         <dataType>String</dataType>
         <expression>LEFT({!$Api.Partner_Server_URL_620}, FIND(&quot;/services&quot;, {!$Api.Partner_Server_URL_620}) - 1)</expression>
     </formulas>
-    <interviewLabel>FL Create Account {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>FL Create Account</label>
+    <formulas>
+        <name>ProspectUrlCorp</name>
+        <dataType>String</dataType>
+        <expression>{!InstanceBaseUrl} &amp; &quot;/lightning/r/Lead/&quot; &amp; {!Copy_1_of_Create_Prospect} &amp; &quot;/view&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>ProspectUrlIndividual</name>
+        <dataType>String</dataType>
+        <expression>{!InstanceBaseUrl} &amp; &quot;/lightning/r/Lead/&quot; &amp; {!Create_Prospect} &amp; &quot;/view&quot;</expression>
+    </formulas>
+    <interviewLabel>FL Create Prospect {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FL Create Prospect</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -229,64 +250,23 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordCreates>
-        <name>CreateCorporateAccount</name>
-        <label>CreateCorporateAccount</label>
+        <name>Copy_1_of_Create_Prospect</name>
+        <label>Copy 1 of Create Prospect</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>CreatedCorpAcc</targetReference>
+            <targetReference>Copy_1_of_Assign_Out</targetReference>
         </connector>
         <inputAssignments>
-            <field>AnnualRevenue</field>
+            <field>Company</field>
             <value>
-                <elementReference>annualRevenue</elementReference>
+                <elementReference>company</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>Industry</field>
+            <field>Email</field>
             <value>
-                <elementReference>industry</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Name</field>
-            <value>
-                <elementReference>name</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>NumberOfEmployees</field>
-            <value>
-                <elementReference>employees</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Phone</field>
-            <value>
-                <elementReference>phone</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Website</field>
-            <value>
-                <elementReference>website</elementReference>
-            </value>
-        </inputAssignments>
-        <object>Account</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordCreates>
-    <recordCreates>
-        <name>CreatePersonAccount</name>
-        <label>CreatePersonAccount</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <connector>
-            <targetReference>CreatedPersonAcc</targetReference>
-        </connector>
-        <inputAssignments>
-            <field>AnnualRevenue</field>
-            <value>
-                <elementReference>annualRevenue</elementReference>
+                <elementReference>email</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -308,6 +288,12 @@
             </value>
         </inputAssignments>
         <inputAssignments>
+            <field>LeadSource</field>
+            <value>
+                <elementReference>leadSource</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>NumberOfEmployees</field>
             <value>
                 <elementReference>employees</elementReference>
@@ -320,18 +306,83 @@
             </value>
         </inputAssignments>
         <inputAssignments>
+            <field>ProductInterest__c</field>
+            <value>
+                <elementReference>productInterest</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_Prospect</name>
+        <label>Create Prospect</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Assign_Out</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Company</field>
+            <value>
+                <elementReference>company</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Email</field>
+            <value>
+                <elementReference>email</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FirstName</field>
+            <value>
+                <elementReference>firstName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Industry</field>
+            <value>
+                <elementReference>industry</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LastName</field>
+            <value>
+                <elementReference>lastName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LeadSource</field>
+            <value>
+                <elementReference>leadSource</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>NumberOfEmployees</field>
+            <value>
+                <elementReference>employees</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Phone</field>
+            <value>
+                <elementReference>phone</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ProductInterest__c</field>
+            <value>
+                <elementReference>productInterest</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>RecordTypeId</field>
             <value>
                 <elementReference>PersonId</elementReference>
             </value>
         </inputAssignments>
-        <inputAssignments>
-            <field>Website</field>
-            <value>
-                <elementReference>website</elementReference>
-            </value>
-        </inputAssignments>
-        <object>Account</object>
+        <object>Lead</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <runInMode>SystemModeWithoutSharing</runInMode>
@@ -339,49 +390,41 @@
         <locationX>0</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>WhichType</targetReference>
+            <targetReference>HaveType</targetReference>
         </connector>
     </start>
     <status>Active</status>
     <textTemplates>
-        <name>tt_CreatedCorpAccount</name>
+        <name>tt_FinishedTextCorp</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Created account {!name} (&lt;a href=&quot;{!AccountUrlCorp}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!CreateCorporateAccount}&lt;/a&gt;).&lt;/p&gt;</text>
+        <text>&lt;p&gt;Created prospect {!firstName} {!lastName} (&lt;a href=&quot;{!ProspectUrlCorp}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!Copy_1_of_Create_Prospect}&lt;/a&gt;).&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
-        <name>tt_CreatedPersonAcc</name>
+        <name>tt_FinishedTextIndividual</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Created account {!firstName} {!lastName} (&lt;a href=&quot;{!AccountUrlPersonal}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!CreatePersonAccount}&lt;/a&gt;).&lt;/p&gt;</text>
+        <text>&lt;p&gt;Created prospect {!firstName} {!lastName} (&lt;a href=&quot;{!ProspectUrlIndividual}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!Create_Prospect}&lt;/a&gt;).&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
-        <name>tt_LastNameRequired</name>
+        <name>tt_NeedType</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Last name is required for Person accounts.&lt;/p&gt;</text>
+        <text>&lt;p&gt;Please provide a prospect type (Individual or Corporate)&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
-        <name>tt_NameRequired</name>
+        <name>tt_ValidateRequired</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Account name is required for Corporate accounts.&lt;/p&gt;</text>
+        <text>&lt;p&gt;Last name and product interest are required.&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
-        <name>tt_TypeRequired</name>
+        <name>tt_WrongType</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Please specify to create either a Person or Corporate account.&lt;/p&gt;</text>
+        <text>&lt;p&gt;Please enter a valid type (Individual or Corporate).&lt;/p&gt;</text>
     </textTemplates>
     <variables>
-        <name>accountType</name>
+        <name>company</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
         <isInput>true</isInput>
         <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>annualRevenue</name>
-        <dataType>Number</dataType>
-        <isCollection>false</isCollection>
-        <isInput>true</isInput>
-        <isOutput>false</isOutput>
-        <scale>0</scale>
     </variables>
     <variables>
         <name>done</name>
@@ -389,6 +432,13 @@
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>email</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
     </variables>
     <variables>
         <name>employees</name>
@@ -420,18 +470,25 @@
         <isOutput>false</isOutput>
     </variables>
     <variables>
+        <name>leadId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>leadSource</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
         <name>message</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>true</isOutput>
-    </variables>
-    <variables>
-        <name>name</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>true</isInput>
-        <isOutput>false</isOutput>
     </variables>
     <variables>
         <name>PersonId</name>
@@ -440,7 +497,7 @@
         <isInput>false</isInput>
         <isOutput>false</isOutput>
         <value>
-            <stringValue>012gK000001ybLtQAI</stringValue>
+            <stringValue>012gK000001oeCzQAI</stringValue>
         </value>
     </variables>
     <variables>
@@ -451,7 +508,14 @@
         <isOutput>false</isOutput>
     </variables>
     <variables>
-        <name>website</name>
+        <name>productInterest</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>prospectType</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
         <isInput>true</isInput>

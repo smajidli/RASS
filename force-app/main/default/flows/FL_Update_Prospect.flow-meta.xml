@@ -644,6 +644,21 @@
         </rules>
     </decisions>
     <environments>Default</environments>
+    <formulas>
+        <name>InstanceBaseUrl</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_620}, FIND(&quot;/services&quot;, {!$Api.Partner_Server_URL_620}) - 1)</expression>
+    </formulas>
+    <formulas>
+        <name>ProspectUrl</name>
+        <dataType>String</dataType>
+        <expression>{!InstanceBaseUrl} &amp; &quot;/lightning/r/Lead/&quot; &amp; {!leadFound.Id} &amp; &quot;/view&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>ProspectUrlLoop</name>
+        <dataType>String</dataType>
+        <expression>{!InstanceBaseUrl} &amp; &quot;/lightning/r/Lead/&quot; &amp; {!Loop_Prospects.Id} &amp; &quot;/view&quot;</expression>
+    </formulas>
     <interviewLabel>FL Update Prospect {!$Flow.CurrentDateTime}</interviewLabel>
     <label>FL Update Prospect</label>
     <loops>
@@ -766,12 +781,12 @@
     <textTemplates>
         <name>tt_AppendManyByName</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;- {!Loop_Prospects.Name}:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;{!Loop_Prospects.Id}&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+        <text>&lt;p&gt;- &lt;a href=&quot;{!ProspectUrlLoop}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!Loop_Prospects.Name}&lt;/a&gt;:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;{!Loop_Prospects.Id}&lt;/li&gt;&lt;/ul&gt;</text>
     </textTemplates>
     <textTemplates>
         <name>tt_ChangesMade</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Updated Prospect {!leadFound.Name}.&lt;/p&gt;</text>
+        <text>&lt;p&gt;Updated Prospect &lt;a href=&quot;{!ProspectUrl}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!leadFound.Name}&lt;/a&gt;.&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
         <name>tt_ManyByName</name>

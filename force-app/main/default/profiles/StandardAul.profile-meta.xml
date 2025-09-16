@@ -246,6 +246,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>FL_Create_Prospect</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>FL_Create_Work_Item</flow>
     </flowAccesses>
     <flowAccesses>
@@ -263,6 +267,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>FL_My_Open_WorkItems_Text</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>FL_Prospect_Fact_Text</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
