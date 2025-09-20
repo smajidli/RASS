@@ -1,94 +1,9 @@
 {
   "status": 0,
   "result": {
-    "totalSize": 6,
+    "totalSize": 2,
     "done": true,
     "records": [
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000020vPeiSAE"
-        },
-        "Action": "insert_policy_set_definition",
-        "Section": null,
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-09-18T16:23:25.000+0000",
-        "Display": "Policy All Data Access Ruleset was created."
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000020vPejSAE"
-        },
-        "Action": "updated_policy_rule_version",
-        "Section": null,
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-09-18T16:23:25.000+0000",
-        "Display": "Object and field level policies were regenerated <a href=/9gZgK000000u7Gz>Details</a> status is PROCESSING. "
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00002121eOSAQ"
-        },
-        "Action": "updated_policy_rule_version",
-        "Section": null,
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-09-18T16:23:26.000+0000",
-        "Display": "Object and field level policies were regenerated <a href=/9gZgK000000u7Gz>Details</a> status is ACTIVE. "
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK0000211sZVSAY"
-        },
-        "Action": "insertTagTaxonomy",
-        "Section": "Data Governance",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-09-18T16:23:56.000+0000",
-        "Display": "Data Governance: created tag taxonomy Custom Tag Taxonomy"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK0000211sZWSAY"
-        },
-        "Action": "insertClassificationTaxonomy",
-        "Section": "Data Governance",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-09-18T16:23:56.000+0000",
-        "Display": "Data Governance: created classification taxonomy Custom Classification Taxonomy"
-      },
       {
         "attributes": {
           "type": "SetupAuditTrail",
@@ -104,6 +19,23 @@
           "Name": "Automated Process"
         },
         "CreatedDate": "2025-09-19T04:58:44.000+0000",
+        "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK0000223CQGSA2"
+        },
+        "Action": "PermSetC2CLicenselessMigration",
+        "Section": null,
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
+          },
+          "Name": "Automated Process"
+        },
+        "CreatedDate": "2025-09-20T04:59:33.000+0000",
         "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
       }
     ]
