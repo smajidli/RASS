@@ -842,7 +842,7 @@
     <textTemplates>
         <name>tt_Body</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Hello,&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;You’ve been assigned Work Item &lt;a href=&quot;{!WorkItemUrl}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{!GetByNumber.CaseNumber}&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Thank you.&lt;/p&gt;</text>
+        <text>&lt;p&gt;Hello,&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;You have been assigned Work Item {!GetByNumber.CaseNumber}. Please access it by clicking &lt;a href=&quot;{!WorkItemUrl}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Thank you.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
         <name>tt_NeedKey</name>
