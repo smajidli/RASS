@@ -7,7 +7,7 @@
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000029s4WCSAY"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00002Bg9hvSAB"
         },
         "Action": "PermSetC2CLicenselessMigration",
         "Section": null,
@@ -18,13 +18,13 @@
           },
           "Name": "Automated Process"
         },
-        "CreatedDate": "2025-09-28T05:14:10.000+0000",
+        "CreatedDate": "2025-09-30T05:16:23.000+0000",
         "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00002AUazESAT"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00002DWUDbSAP"
         },
         "Action": "PermSetC2CLicenselessMigration",
         "Section": null,
@@ -35,7 +35,7 @@
           },
           "Name": "Automated Process"
         },
-        "CreatedDate": "2025-09-29T05:15:07.000+0000",
+        "CreatedDate": "2025-10-01T04:55:37.000+0000",
         "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
       }
     ]
