@@ -112,8 +112,4 @@
         <name>DEVHUB_yymohgbf0udkirpcjsa6</name>
         <type>ConnectedApp</type>
     </appMenuItems>
-    <appMenuItems>
-        <name>standard__AgentforceStudio</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
 </AppMenu>
