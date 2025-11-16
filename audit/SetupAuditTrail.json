@@ -1,20 +1,8 @@
 {
   "status": 0,
   "result": {
-    "totalSize": 1,
+    "totalSize": 0,
     "done": true,
-    "records": [
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00002lyqpOSAQ"
-        },
-        "Action": "value_MAX_STREAMING_TOPICS_PROV",
-        "Section": null,
-        "CreatedBy": null,
-        "CreatedDate": "2025-11-14T05:26:17.000+0000",
-        "Display": "Max number of streaming topics"
-      }
-    ]
+    "records": []
   }
 }
