@@ -1,16 +1,16 @@
 {
   "status": 0,
   "result": {
-    "totalSize": 12,
+    "totalSize": 2,
     "done": true,
     "records": [
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00002pUqCZSA0"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00002qKKa3SAG"
         },
-        "Action": "PermissionSetGroupCalculationStarted",
-        "Section": "Permission Set Group",
+        "Action": "PermSetC2CLicenselessMigration",
+        "Section": null,
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -18,195 +18,19 @@
           },
           "Name": "Automated Process"
         },
-        "CreatedDate": "2025-11-21T05:24:17.000+0000",
-        "Display": "Permission set group calculation started : AgentforceServiceAgentUserPsg"
+        "CreatedDate": "2025-11-22T06:24:47.000+0000",
+        "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00002pUqCaSAK"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00002qLyaMSAS"
         },
-        "Action": "PermSetDataspaceScopeRemoved",
-        "Section": "Manage Users",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-11-21T05:24:18.000+0000",
-        "Display": "Changed permission set AgentforceServiceAgentUserPsg: Data Space default was removed"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00002pUqCbSAK"
-        },
-        "Action": "PermSetDataspaceScopeAdded",
-        "Section": "Manage Users",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-11-21T05:24:18.000+0000",
-        "Display": "Changed permission set AgentforceServiceAgentUserPsg: Data Space default was added"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00002pUqCcSAK"
-        },
-        "Action": "PermSetGroupEntityPermChanged",
-        "Section": "Permission Set Group",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-11-21T05:24:19.000+0000",
-        "Display": "Changed permission set group AgentforceServiceAgentUserPsg: ActivationFlowVersionMap object permissions were changed from No Access to Read, View All Records"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00002pUqCdSAK"
-        },
-        "Action": "PermSetGroupEntityPermChanged",
-        "Section": "Permission Set Group",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-11-21T05:24:19.000+0000",
-        "Display": "Changed permission set group AgentforceServiceAgentUserPsg: Content Lens Field object permissions were changed from No Access to Read"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00002pUqCeSAK"
-        },
-        "Action": "PermSetGroupEntityPermChanged",
-        "Section": "Permission Set Group",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-11-21T05:24:19.000+0000",
-        "Display": "Changed permission set group AgentforceServiceAgentUserPsg: Activation Target Definition object permissions were changed from No Access to Read, View All Records"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00002pUqCfSAK"
-        },
-        "Action": "PermSetGroupEntityPermChanged",
-        "Section": "Permission Set Group",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-11-21T05:24:19.000+0000",
-        "Display": "Changed permission set group AgentforceServiceAgentUserPsg: Activation Platform Field Value Definition object permissions were changed from No Access to Read, View All Records"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00002pUqCgSAK"
-        },
-        "Action": "PermSetGroupEntityPermChanged",
-        "Section": "Permission Set Group",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-11-21T05:24:19.000+0000",
-        "Display": "Changed permission set group AgentforceServiceAgentUserPsg: Activation Target Platform Definition object permissions were changed from No Access to Read, View All Records"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00002pUqChSAK"
-        },
-        "Action": "PermSetGroupEntityPermChanged",
-        "Section": "Permission Set Group",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-11-21T05:24:19.000+0000",
-        "Display": "Changed permission set group AgentforceServiceAgentUserPsg: Data Model Object object permissions were changed from Read, View All Records to Read"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00002pUqCiSAK"
-        },
-        "Action": "PermSetGroupEntityPermChanged",
-        "Section": "Permission Set Group",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-11-21T05:24:19.000+0000",
-        "Display": "Changed permission set group AgentforceServiceAgentUserPsg: Market Segment Definition object permissions were changed from Read, View All Records to Read"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00002pUqCjSAK"
-        },
-        "Action": "PermSetGroupUserPermDisabled",
-        "Section": "Permission Set Group",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-11-21T05:24:19.000+0000",
-        "Display": "Changed permission set group AgentforceServiceAgentUserPsg: ViewAllDataGovPolicies permission was changed from enabled to disabled"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00002pUqCkSAK"
-        },
-        "Action": "PermissionSetGroupCalculationComplete",
-        "Section": "Permission Set Group",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-11-21T05:24:19.000+0000",
-        "Display": "Permission set group calculation completed : AgentforceServiceAgentUserPsg"
+        "Action": "value_MAX_STREAMING_TOPICS_PROV",
+        "Section": null,
+        "CreatedBy": null,
+        "CreatedDate": "2025-11-22T08:45:06.000+0000",
+        "Display": "Max number of streaming topics"
       }
     ]
   }
