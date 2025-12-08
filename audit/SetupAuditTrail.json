@@ -1,8 +1,162 @@
 {
   "status": 0,
   "result": {
-    "totalSize": 0,
+    "totalSize": 9,
     "done": true,
-    "records": []
+    "records": [
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK0000310Dy5SAE"
+        },
+        "Action": "PermSetC2CLicenselessMigration",
+        "Section": null,
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
+          },
+          "Name": "Automated Process"
+        },
+        "CreatedDate": "2025-12-07T06:23:26.000+0000",
+        "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000030zuQUSAY"
+        },
+        "Action": "PermissionSetGroupCalculationStarted",
+        "Section": "Permission Set Group",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
+          },
+          "Name": "Automated Process"
+        },
+        "CreatedDate": "2025-12-07T06:44:56.000+0000",
+        "Display": "Permission set group calculation started : AgentforceServiceAgentUserPsg"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000030zuQVSAY"
+        },
+        "Action": "PermSetDataspaceScopeRemoved",
+        "Section": "Manage Users",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
+          },
+          "Name": "Automated Process"
+        },
+        "CreatedDate": "2025-12-07T06:44:58.000+0000",
+        "Display": "Changed permission set AgentforceServiceAgentUserPsg: Data Space default was removed"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000030zuQWSAY"
+        },
+        "Action": "PermSetDataspaceScopeAdded",
+        "Section": "Manage Users",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
+          },
+          "Name": "Automated Process"
+        },
+        "CreatedDate": "2025-12-07T06:44:58.000+0000",
+        "Display": "Changed permission set AgentforceServiceAgentUserPsg: Data Space default was added"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000030zuQXSAY"
+        },
+        "Action": "PermSetGroupEntityPermChanged",
+        "Section": "Permission Set Group",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
+          },
+          "Name": "Automated Process"
+        },
+        "CreatedDate": "2025-12-07T06:44:59.000+0000",
+        "Display": "Changed permission set group AgentforceServiceAgentUserPsg: Engagement Signal Compound Metric object permissions were changed from No Access to Read"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000030zuQYSAY"
+        },
+        "Action": "PermSetGroupEntityPermChanged",
+        "Section": "Permission Set Group",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
+          },
+          "Name": "Automated Process"
+        },
+        "CreatedDate": "2025-12-07T06:44:59.000+0000",
+        "Display": "Changed permission set group AgentforceServiceAgentUserPsg: Response Template object permissions were changed from No Access to Read"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000030zuQZSAY"
+        },
+        "Action": "PermSetGroupEntityPermChanged",
+        "Section": "Permission Set Group",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
+          },
+          "Name": "Automated Process"
+        },
+        "CreatedDate": "2025-12-07T06:44:59.000+0000",
+        "Display": "Changed permission set group AgentforceServiceAgentUserPsg: Experiment object permissions were changed from No Access to Read"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000030zuQaSAI"
+        },
+        "Action": "PermSetGroupEntityPermChanged",
+        "Section": "Permission Set Group",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
+          },
+          "Name": "Automated Process"
+        },
+        "CreatedDate": "2025-12-07T06:44:59.000+0000",
+        "Display": "Changed permission set group AgentforceServiceAgentUserPsg: Engagement Signal object permissions were changed from No Access to Read"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000030zuQbSAI"
+        },
+        "Action": "PermissionSetGroupCalculationComplete",
+        "Section": "Permission Set Group",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
+          },
+          "Name": "Automated Process"
+        },
+        "CreatedDate": "2025-12-07T06:44:59.000+0000",
+        "Display": "Permission set group calculation completed : AgentforceServiceAgentUserPsg"
+      }
+    ]
   }
 }
