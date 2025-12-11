@@ -1,13 +1,13 @@
 {
   "status": 0,
   "result": {
-    "totalSize": 1,
+    "totalSize": 5,
     "done": true,
     "records": [
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000031XVEGSA4"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK0000327E9tSAE"
         },
         "Action": "PermSetC2CLicenselessMigration",
         "Section": null,
@@ -18,8 +18,76 @@
           },
           "Name": "Automated Process"
         },
-        "CreatedDate": "2025-12-09T06:29:11.000+0000",
+        "CreatedDate": "2025-12-10T06:32:42.000+0000",
         "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000032l1R6SAI"
+        },
+        "Action": "createdActionOverride",
+        "Section": "Customize Contacts",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-11T01:33:19.000+0000",
+        "Display": "Added standard button override: View (Lightning Page null)"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000032l1R7SAI"
+        },
+        "Action": "createdActionOverride",
+        "Section": "Customize Contacts",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-11T01:33:19.000+0000",
+        "Display": "Added standard button override: View (Lightning Page null)"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000032l14USAQ"
+        },
+        "Action": "leadlayout",
+        "Section": "Customize Leads",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-11T01:34:15.000+0000",
+        "Display": "Changed Lead page layout Lead Layout"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000032lJUMSA2"
+        },
+        "Action": "leadlayout",
+        "Section": "Customize Leads",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-11T01:34:27.000+0000",
+        "Display": "Changed Lead page layout Lead Layout"
       }
     ]
   }
