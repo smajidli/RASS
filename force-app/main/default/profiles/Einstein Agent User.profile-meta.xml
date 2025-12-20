@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <classAccesses>
-        <apexClass>AgentAccountActions</apexClass>
+        <apexClass>AF_ConvertProspectAction</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>AF_UpdateContactAction</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>AF_UpdateContactActionTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -243,6 +251,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>FL_Create_Account</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>FL_Create_Contact</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>

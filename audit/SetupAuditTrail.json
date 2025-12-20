@@ -1,81 +1,13 @@
 {
   "status": 0,
   "result": {
-    "totalSize": 5,
+    "totalSize": 23,
     "done": true,
     "records": [
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000034lT9YSAU"
-        },
-        "Action": "PermissionSetGroupCalculationStarted",
-        "Section": "Permission Set Group",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-12-18T06:30:44.000+0000",
-        "Display": "Permission set group calculation started : AgentforceServiceAgentUserPsg"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000034lT9ZSAU"
-        },
-        "Action": "PermSetDataspaceScopeRemoved",
-        "Section": "Manage Users",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-12-18T06:30:46.000+0000",
-        "Display": "Changed permission set AgentforceServiceAgentUserPsg: Data Space default was removed"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000034lT9aSAE"
-        },
-        "Action": "PermSetDataspaceScopeAdded",
-        "Section": "Manage Users",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-12-18T06:30:46.000+0000",
-        "Display": "Changed permission set AgentforceServiceAgentUserPsg: Data Space default was added"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000034lT9bSAE"
-        },
-        "Action": "PermissionSetGroupCalculationComplete",
-        "Section": "Permission Set Group",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2025-12-18T06:30:47.000+0000",
-        "Display": "Permission set group calculation completed : AgentforceServiceAgentUserPsg"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000034lQ3ESAU"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK0000364fD2SAI"
         },
         "Action": "PermSetC2CLicenselessMigration",
         "Section": null,
@@ -86,8 +18,382 @@
           },
           "Name": "Automated Process"
         },
-        "CreatedDate": "2025-12-18T06:35:32.000+0000",
+        "CreatedDate": "2025-12-19T06:34:13.000+0000",
         "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036avpGSAQ"
+        },
+        "Action": "createdinteractiondefinition",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-19T20:50:00.000+0000",
+        "Display": "Created flow with Name \"FL Create Contact\" and Unique Name \"FL_Create_Contact\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036bfnBSAQ"
+        },
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-19T21:46:06.000+0000",
+        "Display": "Created flow version #1 \"FL Create Contact\" for flow with Unique Name \"FL_Create_Contact\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036bfnCSAQ"
+        },
+        "Action": "deletedinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-19T21:46:11.000+0000",
+        "Display": "Deleted flow version #-1 \"FL Create Contact\" for flow with Unique Name \"FL_Create_Contact\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036bfqPSAQ"
+        },
+        "Action": "activatedinteractiondefinitionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-19T21:46:17.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for flow with Name \"FL Create Contact\" and Unique Name \"FL_Create_Contact\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036bZgCSAU"
+        },
+        "Action": "createdinteractiondefversion",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-19T22:00:14.000+0000",
+        "Display": "Created flow version #2 \"FL Create Contact\" for flow with Unique Name \"FL_Create_Contact\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036bZMoSAM"
+        },
+        "Action": "activatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-19T22:00:19.000+0000",
+        "Display": "Activated \"System Mode without Sharing\" for version #2 of flow with Unique Name \"FL_Create_Contact\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036bZMpSAM"
+        },
+        "Action": "deactivatedinteractiondefversionWithSystemMode",
+        "Section": "Flows",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-19T22:00:19.000+0000",
+        "Display": "Deactivated \"System Mode without Sharing\" for version #1 of flow with Unique Name \"FL_Create_Contact\""
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036cDFNSA2"
+        },
+        "Action": "createdApexClass",
+        "Section": "Apex Class",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-19T23:23:28.000+0000",
+        "Display": "Created AF_UpdateContactAction Apex Class code"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036bl6ISAQ"
+        },
+        "Action": "deletedApexClass",
+        "Section": "Apex Class",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-19T23:24:21.000+0000",
+        "Display": "Deleted AgentAccountActions Apex Class code"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036c1uDSAQ"
+        },
+        "Action": "createdApexClass",
+        "Section": "Apex Class",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-19T23:25:22.000+0000",
+        "Display": "Created AF_UpdateContactActionTest Apex Class code"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036cF5tSAE"
+        },
+        "Action": "changedApexClass",
+        "Section": "Apex Class",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-19T23:36:30.000+0000",
+        "Display": "Changed AF_UpdateContactAction Apex Class code"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036cE9rSAE"
+        },
+        "Action": "changedApexClass",
+        "Section": "Apex Class",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-19T23:42:45.000+0000",
+        "Display": "Changed AF_UpdateContactAction Apex Class code"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036bhPpSAI"
+        },
+        "Action": "changedApexClass",
+        "Section": "Apex Class",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-20T00:06:22.000+0000",
+        "Display": "Changed AF_UpdateContactAction Apex Class code"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036cC0HSAU"
+        },
+        "Action": "changedApexClass",
+        "Section": "Apex Class",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-20T00:06:50.000+0000",
+        "Display": "Changed AF_UpdateContactAction Apex Class code"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036c023SAA"
+        },
+        "Action": "changedApexClass",
+        "Section": "Apex Class",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-20T00:44:06.000+0000",
+        "Display": "Changed AF_UpdateContactAction Apex Class code"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036c2jsSAA"
+        },
+        "Action": "changedApexClass",
+        "Section": "Apex Class",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-20T00:44:30.000+0000",
+        "Display": "Changed AF_UpdateContactAction Apex Class code"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036cDlfSAE"
+        },
+        "Action": "changedApexClass",
+        "Section": "Apex Class",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-20T00:44:33.000+0000",
+        "Display": "Changed AF_UpdateContactAction Apex Class code"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036cLT4SAM"
+        },
+        "Action": "changedApexClass",
+        "Section": "Apex Class",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-20T00:44:36.000+0000",
+        "Display": "Changed AF_UpdateContactAction Apex Class code"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036cMx0SAE"
+        },
+        "Action": "changedApexClass",
+        "Section": "Apex Class",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-20T00:50:02.000+0000",
+        "Display": "Changed AF_UpdateContactAction Apex Class code"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036cU50SAE"
+        },
+        "Action": "createdApexClass",
+        "Section": "Apex Class",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-20T01:09:11.000+0000",
+        "Display": "Created AF_ConvertProspectAction Apex Class code"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036cLY4SAM"
+        },
+        "Action": "changedApexClass",
+        "Section": "Apex Class",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-20T01:17:42.000+0000",
+        "Display": "Changed AF_ConvertProspectAction Apex Class code"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036cisjSAA"
+        },
+        "Action": "changedApexClass",
+        "Section": "Apex Class",
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+          },
+          "Name": "Steve Williams"
+        },
+        "CreatedDate": "2025-12-20T01:29:27.000+0000",
+        "Display": "Changed AF_ConvertProspectAction Apex Class code"
       }
     ]
   }
