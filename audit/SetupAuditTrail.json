@@ -1,27 +1,16 @@
 {
   "status": 0,
   "result": {
-    "totalSize": 15,
+    "totalSize": 5,
     "done": true,
     "records": [
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036eD9hSAE"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036pSV4SAM"
         },
-        "Action": "value_MAX_STREAMING_TOPICS_PROV",
+        "Action": "PermSetC2CLicenselessMigration",
         "Section": null,
-        "CreatedBy": null,
-        "CreatedDate": "2025-12-20T05:30:54.000+0000",
-        "Display": "Max number of streaming topics"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036dlajSAA"
-        },
-        "Action": "createdFlexiPage",
-        "Section": "Lightning Pages",
         "CreatedBy": {
           "attributes": {
             "type": "User",
@@ -29,223 +18,76 @@
           },
           "Name": "Automated Process"
         },
-        "CreatedDate": "2025-12-20T05:30:55.000+0000",
-        "Display": "Created Lightning Page: Trusted Services Privacy Agent App Utility Bar"
+        "CreatedDate": "2025-12-21T06:34:58.000+0000",
+        "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036jv44SAA"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000037FyfsSAC"
         },
-        "Action": "value_MAX_STREAMING_TOPICS_PROV",
-        "Section": null,
-        "CreatedBy": null,
-        "CreatedDate": "2025-12-20T18:19:47.000+0000",
-        "Display": "Max number of streaming topics"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036k51SSAQ"
-        },
-        "Action": "createdApexClass",
-        "Section": "Apex Class",
+        "Action": "PermissionSetGroupCalculationStarted",
+        "Section": "Permission Set Group",
         "CreatedBy": {
           "attributes": {
             "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
           },
-          "Name": "Steve Williams"
+          "Name": "Automated Process"
         },
-        "CreatedDate": "2025-12-20T18:25:11.000+0000",
-        "Display": "Created AF_CreateActivityAction Apex Class code"
+        "CreatedDate": "2025-12-22T03:05:25.000+0000",
+        "Display": "Permission set group calculation started : AgentforceServiceAgentUserPsg"
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036lwA5SAI"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000037FyftSAC"
         },
-        "Action": "createdApexClass",
-        "Section": "Apex Class",
+        "Action": "PermSetDataspaceScopeRemoved",
+        "Section": "Manage Users",
         "CreatedBy": {
           "attributes": {
             "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
           },
-          "Name": "Steve Williams"
+          "Name": "Automated Process"
         },
-        "CreatedDate": "2025-12-20T21:09:10.000+0000",
-        "Display": "Created AF_AddWorkItemNoteAction Apex Class code"
+        "CreatedDate": "2025-12-22T03:05:27.000+0000",
+        "Display": "Changed permission set AgentforceServiceAgentUserPsg: Data Space default was removed"
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036m8MTSAY"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000037FyfuSAC"
         },
-        "Action": "changedApexClass",
-        "Section": "Apex Class",
+        "Action": "PermSetDataspaceScopeAdded",
+        "Section": "Manage Users",
         "CreatedBy": {
           "attributes": {
             "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
           },
-          "Name": "Steve Williams"
+          "Name": "Automated Process"
         },
-        "CreatedDate": "2025-12-20T21:13:53.000+0000",
-        "Display": "Changed AF_AddWorkItemNoteAction Apex Class code"
+        "CreatedDate": "2025-12-22T03:05:27.000+0000",
+        "Display": "Changed permission set AgentforceServiceAgentUserPsg: Data Space default was added"
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036m8pXSAQ"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000037FyfvSAC"
         },
-        "Action": "createdApexClass",
-        "Section": "Apex Class",
+        "Action": "PermissionSetGroupCalculationComplete",
+        "Section": "Permission Set Group",
         "CreatedBy": {
           "attributes": {
             "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
+            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
           },
-          "Name": "Steve Williams"
+          "Name": "Automated Process"
         },
-        "CreatedDate": "2025-12-20T21:17:42.000+0000",
-        "Display": "Created AF_UpdateActivityAction Apex Class code"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036lTy6SAE"
-        },
-        "Action": "createdApexClass",
-        "Section": "Apex Class",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Steve Williams"
-        },
-        "CreatedDate": "2025-12-20T21:45:41.000+0000",
-        "Display": "Created AF_ListActivitiesAction Apex Class code"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036mEQHSA2"
-        },
-        "Action": "changedApexClass",
-        "Section": "Apex Class",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Steve Williams"
-        },
-        "CreatedDate": "2025-12-20T21:53:30.000+0000",
-        "Display": "Changed AF_ListActivitiesAction Apex Class code"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036mELUSA2"
-        },
-        "Action": "createdApexClass",
-        "Section": "Apex Class",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Steve Williams"
-        },
-        "CreatedDate": "2025-12-20T22:11:15.000+0000",
-        "Display": "Created AF_ListAccountsAction Apex Class code"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036mCwPSAU"
-        },
-        "Action": "changedApexClass",
-        "Section": "Apex Class",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Steve Williams"
-        },
-        "CreatedDate": "2025-12-20T22:11:24.000+0000",
-        "Display": "Changed AF_ListAccountsAction Apex Class code"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036mHUbSAM"
-        },
-        "Action": "changedApexClass",
-        "Section": "Apex Class",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Steve Williams"
-        },
-        "CreatedDate": "2025-12-20T22:15:26.000+0000",
-        "Display": "Changed AF_ListAccountsAction Apex Class code"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036mFUTSA2"
-        },
-        "Action": "changedApexClass",
-        "Section": "Apex Class",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Steve Williams"
-        },
-        "CreatedDate": "2025-12-20T22:24:37.000+0000",
-        "Display": "Changed AF_ListActivitiesAction Apex Class code"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036m8PpSAI"
-        },
-        "Action": "createdApexClass",
-        "Section": "Apex Class",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Steve Williams"
-        },
-        "CreatedDate": "2025-12-20T22:45:56.000+0000",
-        "Display": "Created AF_CreateContactAction Apex Class code"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK000036hor6SAA"
-        },
-        "Action": "changedApexClass",
-        "Section": "Apex Class",
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000005EgR7QAK"
-          },
-          "Name": "Steve Williams"
-        },
-        "CreatedDate": "2025-12-20T23:26:48.000+0000",
-        "Display": "Changed AF_CreateContactAction Apex Class code"
+        "CreatedDate": "2025-12-22T03:05:27.000+0000",
+        "Display": "Permission set group calculation completed : AgentforceServiceAgentUserPsg"
       }
     ]
   }
