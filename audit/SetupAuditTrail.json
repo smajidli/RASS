@@ -7,7 +7,7 @@
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00003J75e9SAB"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00003JZTzHSAX"
         },
         "Action": "PermSetC2CLicenselessMigration",
         "Section": null,
@@ -18,13 +18,13 @@
           },
           "Name": "Automated Process"
         },
-        "CreatedDate": "2026-01-03T06:35:07.000+0000",
+        "CreatedDate": "2026-01-04T06:35:55.000+0000",
         "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00003JX3HDSA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00003JvOagSAF"
         },
         "Action": "PermissionSetGroupCalculationStarted",
         "Section": "Permission Set Group",
@@ -35,13 +35,13 @@
           },
           "Name": "Automated Process"
         },
-        "CreatedDate": "2026-01-04T04:52:20.000+0000",
+        "CreatedDate": "2026-01-05T05:08:04.000+0000",
         "Display": "Permission set group calculation started : AgentforceServiceAgentUserPsg"
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00003JX3HESA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00003JvOahSAF"
         },
         "Action": "PermSetDataspaceScopeRemoved",
         "Section": "Manage Users",
@@ -52,13 +52,13 @@
           },
           "Name": "Automated Process"
         },
-        "CreatedDate": "2026-01-04T04:52:22.000+0000",
+        "CreatedDate": "2026-01-05T05:08:07.000+0000",
         "Display": "Changed permission set AgentforceServiceAgentUserPsg: Data Space default was removed"
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00003JX3HFSA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00003JvOaiSAF"
         },
         "Action": "PermSetDataspaceScopeAdded",
         "Section": "Manage Users",
@@ -69,13 +69,13 @@
           },
           "Name": "Automated Process"
         },
-        "CreatedDate": "2026-01-04T04:52:23.000+0000",
+        "CreatedDate": "2026-01-05T05:08:07.000+0000",
         "Display": "Changed permission set AgentforceServiceAgentUserPsg: Data Space default was added"
       },
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00003JX3HGSA1"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00003JvOajSAF"
         },
         "Action": "PermissionSetGroupCalculationComplete",
         "Section": "Permission Set Group",
@@ -86,7 +86,7 @@
           },
           "Name": "Automated Process"
         },
-        "CreatedDate": "2026-01-04T04:52:23.000+0000",
+        "CreatedDate": "2026-01-05T05:08:08.000+0000",
         "Display": "Permission set group calculation completed : AgentforceServiceAgentUserPsg"
       }
     ]
