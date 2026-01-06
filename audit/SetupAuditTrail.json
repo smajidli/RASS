@@ -7,23 +7,6 @@
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00003JZTzHSAX"
-        },
-        "Action": "PermSetC2CLicenselessMigration",
-        "Section": null,
-        "CreatedBy": {
-          "attributes": {
-            "type": "User",
-            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
-          },
-          "Name": "Automated Process"
-        },
-        "CreatedDate": "2026-01-04T06:35:55.000+0000",
-        "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
-      },
-      {
-        "attributes": {
-          "type": "SetupAuditTrail",
           "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00003JvOagSAF"
         },
         "Action": "PermissionSetGroupCalculationStarted",
@@ -88,6 +71,23 @@
         },
         "CreatedDate": "2026-01-05T05:08:08.000+0000",
         "Display": "Permission set group calculation completed : AgentforceServiceAgentUserPsg"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00003KGzgcSAD"
+        },
+        "Action": "PermSetC2CLicenselessMigration",
+        "Section": null,
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
+          },
+          "Name": "Automated Process"
+        },
+        "CreatedDate": "2026-01-05T06:38:20.000+0000",
+        "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
       }
     ]
   }
