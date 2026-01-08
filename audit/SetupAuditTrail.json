@@ -1,7 +1,7 @@
 {
   "status": 0,
   "result": {
-    "totalSize": 4,
+    "totalSize": 5,
     "done": true,
     "records": [
       {
@@ -71,6 +71,23 @@
         },
         "CreatedDate": "2026-01-07T05:21:53.000+0000",
         "Display": "Permission set group calculation completed : AgentforceServiceAgentUserPsg"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00003LQ82nSAD"
+        },
+        "Action": "PermSetC2CLicenselessMigration",
+        "Section": null,
+        "CreatedBy": {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v47.0/sobjects/User/005gK000004vxtuQAA"
+          },
+          "Name": "Automated Process"
+        },
+        "CreatedDate": "2026-01-07T06:30:39.000+0000",
+        "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
       }
     ]
   }
