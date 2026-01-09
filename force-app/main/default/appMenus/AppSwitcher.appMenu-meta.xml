@@ -116,4 +116,8 @@
         <name>standard__AgentforceStudio</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>standard__AIWorkbench</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
 </AppMenu>
