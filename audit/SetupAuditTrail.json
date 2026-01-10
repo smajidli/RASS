@@ -1,13 +1,24 @@
 {
   "status": 0,
   "result": {
-    "totalSize": 1,
+    "totalSize": 2,
     "done": true,
     "records": [
       {
         "attributes": {
           "type": "SetupAuditTrail",
-          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00003MMVhPSAX"
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00003NDnx9SAD"
+        },
+        "Action": "value_MAX_STREAMING_TOPICS_PROV",
+        "Section": null,
+        "CreatedBy": null,
+        "CreatedDate": "2026-01-09T06:37:07.000+0000",
+        "Display": "Max number of streaming topics"
+      },
+      {
+        "attributes": {
+          "type": "SetupAuditTrail",
+          "url": "/services/data/v47.0/sobjects/SetupAuditTrail/0YmgK00003NDzimSAD"
         },
         "Action": "PermSetC2CLicenselessMigration",
         "Section": null,
@@ -18,7 +29,7 @@
           },
           "Name": "Automated Process"
         },
-        "CreatedDate": "2026-01-08T06:07:16.000+0000",
+        "CreatedDate": "2026-01-09T06:37:54.000+0000",
         "Display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360"
       }
     ]
